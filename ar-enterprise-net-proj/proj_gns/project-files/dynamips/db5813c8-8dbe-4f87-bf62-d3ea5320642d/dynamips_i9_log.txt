@@ -1,0 +1,61 @@
+Jun 22 13:12:47.437 HYPERVISOR: Release 0.2.17-amd64/Darwin (tag 2017072410)
+Jun 22 13:12:47.438 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63438.
+Jun 22 13:12:47.448 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 22 13:12:47.448 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips 
+Jun 22 13:12:47.448 GENERAL: working_dir=/Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips
+Jun 22 13:12:47.449 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips/e51d3561-aba9-4d3f-8fbd-9d2860d33e9f 
+Jun 22 13:12:47.449 GENERAL: working_dir=/Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips/e51d3561-aba9-4d3f-8fbd-9d2860d33e9f
+Jun 22 13:12:47.449 HYPERVISOR: exec_cmd: vm create BOSTON_ISP_US2 13 c7200 
+Jun 22 13:12:47.449 VM: VM BOSTON_ISP_US2 created.
+Jun 22 13:12:47.450 HYPERVISOR: exec_cmd: vm set_con_tcp_port BOSTON_ISP_US2 5022 
+Jun 22 13:12:47.450 HYPERVISOR: exec_cmd: c7200 get_mac_addr BOSTON_ISP_US2 
+Jun 22 13:12:47.450 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP_US2 
+Jun 22 13:12:47.450 HYPERVISOR: exec_cmd: vm slot_add_binding BOSTON_ISP_US2 0 0 C7200-IO-FE 
+Jun 22 13:12:47.451 HYPERVISOR: exec_cmd: vm set_disk0 BOSTON_ISP_US2 0 
+Jun 22 13:12:47.451 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP_US2 
+Jun 22 13:12:47.451 HYPERVISOR: exec_cmd: vm set_idle_pc BOSTON_ISP_US2 0x60608040 
+Jun 22 13:12:47.452 HYPERVISOR: exec_cmd: vm set_ios BOSTON_ISP_US2 /Users/brunoaguiar/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 22 13:12:47.452 HYPERVISOR: exec_cmd: c7200 set_mac_addr BOSTON_ISP_US2 ca0d.5674.0000 
+Jun 22 13:12:47.453 HYPERVISOR: exec_cmd: vm set_nvram BOSTON_ISP_US2 512 
+Jun 22 13:12:47.453 HYPERVISOR: exec_cmd: vm set_ram BOSTON_ISP_US2 512 
+Jun 22 13:12:47.454 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP_US2 
+Jun 22 13:12:47.454 HYPERVISOR: exec_cmd: vm slot_remove_binding BOSTON_ISP_US2 0 0 
+Jun 22 13:12:47.454 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP_US2 
+Jun 22 13:12:47.455 HYPERVISOR: exec_cmd: vm slot_add_binding BOSTON_ISP_US2 0 0 C7200-IO-2FE 
+Jun 22 13:12:47.455 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP_US2 
+Jun 22 13:12:47.455 HYPERVISOR: exec_cmd: vm slot_add_binding BOSTON_ISP_US2 1 0 PA-2FE-TX 
+Jun 22 13:12:51.324 HYPERVISOR: exec_cmd: nio create_udp udp-21a47103-6389-4af1-ae9e-6cf3249bc19c 10030 127.0.0.1 10031 
+Jun 22 13:12:51.552 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BOSTON_ISP_US2 0 0 udp-21a47103-6389-4af1-ae9e-6cf3249bc19c 
+Jun 22 13:12:51.553 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP_US2 
+Jun 22 13:12:52.571 HYPERVISOR: exec_cmd: nio create_udp udp-be5ee025-5e0d-4c2f-b1ea-1ff532dd4a19 10046 127.0.0.1 10047 
+Jun 22 13:12:52.573 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BOSTON_ISP_US2 1 0 udp-be5ee025-5e0d-4c2f-b1ea-1ff532dd4a19 
+Jun 22 13:12:52.573 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP_US2 
+Jun 22 13:14:07.585 HYPERVISOR: exec_cmd: vm set_ghost_status BOSTON_ISP_US2 2 
+Jun 22 13:14:07.586 HYPERVISOR: exec_cmd: vm set_ghost_file BOSTON_ISP_US2 /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips/c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 22 13:14:07.586 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP_US2 
+Jun 22 13:14:07.587 HYPERVISOR: exec_cmd: vm set_config BOSTON_ISP_US2 configs/i13_startup-config.cfg configs/i13_private-config.cfg 
+Jun 22 13:14:07.587 HYPERVISOR: exec_cmd: vm start BOSTON_ISP_US2 
+Jun 22 13:14:37.857 HYPERVISOR: exec_cmd: vm extract_config BOSTON_ISP_US2 
+Jun 22 13:15:37.865 HYPERVISOR: exec_cmd: vm extract_config BOSTON_ISP_US2 
+Jun 22 13:41:52.909 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP_US2 
+Jun 22 13:41:52.915 HYPERVISOR: exec_cmd: vm stop BOSTON_ISP_US2 
+Jun 22 13:41:53.022 VM: VM BOSTON_ISP_US2 shutdown.
+Jun 22 13:41:53.023 HYPERVISOR: exec_cmd: vm extract_config BOSTON_ISP_US2 
+Jun 22 13:42:00.431 HYPERVISOR: exec_cmd: vm set_ghost_status BOSTON_ISP_US2 2 
+Jun 22 13:42:00.432 HYPERVISOR: exec_cmd: vm set_ghost_file BOSTON_ISP_US2 /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips/c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 22 13:42:00.432 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP_US2 
+Jun 22 13:42:00.432 HYPERVISOR: exec_cmd: vm set_config BOSTON_ISP_US2 configs/i13_startup-config.cfg configs/i13_private-config.cfg 
+Jun 22 13:42:00.433 HYPERVISOR: exec_cmd: vm start BOSTON_ISP_US2 
+Jun 22 17:45:44.004 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP_US2 
+Jun 22 17:45:44.004 HYPERVISOR: exec_cmd: vm stop BOSTON_ISP_US2 
+Jun 22 17:45:44.116 VM: VM BOSTON_ISP_US2 shutdown.
+Jun 22 17:45:44.116 HYPERVISOR: exec_cmd: vm extract_config BOSTON_ISP_US2 
+Jun 22 17:45:54.139 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP_US2 
+Jun 22 17:45:54.140 HYPERVISOR: exec_cmd: vm extract_config BOSTON_ISP_US2 
+Jun 22 17:45:54.929 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP_US2 
+Jun 22 17:45:54.930 HYPERVISOR: exec_cmd: vm extract_config BOSTON_ISP_US2 
+Jun 22 17:45:54.936 HYPERVISOR: exec_cmd: vm delete BOSTON_ISP_US2 
+Jun 22 17:45:54.937 VM: VM BOSTON_ISP_US2 destroyed.
+Jun 22 17:45:54.938 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 22 17:45:55.258 HYPERVISOR: Stopped.
+Jun 22 17:45:55.258 GENERAL: reset done.

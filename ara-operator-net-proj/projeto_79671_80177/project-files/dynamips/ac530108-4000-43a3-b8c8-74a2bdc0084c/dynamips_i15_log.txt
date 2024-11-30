@@ -1,0 +1,41 @@
+Jan 25 10:51:12.211 HYPERVISOR: Release 0.2.17-amd64/Darwin (tag 2017072410)
+Jan 25 10:51:12.211 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50483.
+Jan 25 10:51:12.220 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 25 10:51:12.221 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips 
+Jan 25 10:51:12.221 GENERAL: working_dir=/Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips
+Jan 25 10:51:12.221 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips/0ce5e24f-004d-4a7f-886c-c6dced08ea96 
+Jan 25 10:51:12.221 GENERAL: working_dir=/Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips/0ce5e24f-004d-4a7f-886c-c6dced08ea96
+Jan 25 10:51:12.221 HYPERVISOR: exec_cmd: vm create Militech 12 c7200 
+Jan 25 10:51:12.223 VM: VM Militech created.
+Jan 25 10:51:12.224 HYPERVISOR: exec_cmd: vm set_con_tcp_port Militech 5048 
+Jan 25 10:51:12.224 HYPERVISOR: exec_cmd: c7200 get_mac_addr Militech 
+Jan 25 10:51:12.225 HYPERVISOR: exec_cmd: vm get_status Militech 
+Jan 25 10:51:12.225 HYPERVISOR: exec_cmd: vm slot_add_binding Militech 0 0 C7200-IO-FE 
+Jan 25 10:51:12.225 HYPERVISOR: exec_cmd: vm set_disk0 Militech 0 
+Jan 25 10:51:12.226 HYPERVISOR: exec_cmd: vm get_status Militech 
+Jan 25 10:51:12.226 HYPERVISOR: exec_cmd: vm set_idle_pc Militech 0x60608040 
+Jan 25 10:51:12.227 HYPERVISOR: exec_cmd: vm set_ios Militech /Users/brunoaguiar/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 25 10:51:12.227 HYPERVISOR: exec_cmd: c7200 set_mac_addr Militech ca0c.5cb5.0000 
+Jan 25 10:51:12.227 HYPERVISOR: exec_cmd: vm set_nvram Militech 512 
+Jan 25 10:51:12.228 HYPERVISOR: exec_cmd: vm set_ram Militech 512 
+Jan 25 10:51:12.228 HYPERVISOR: exec_cmd: vm get_status Militech 
+Jan 25 10:51:12.228 HYPERVISOR: exec_cmd: vm slot_remove_binding Militech 0 0 
+Jan 25 10:51:12.229 HYPERVISOR: exec_cmd: vm get_status Militech 
+Jan 25 10:51:12.229 HYPERVISOR: exec_cmd: vm slot_add_binding Militech 0 0 C7200-IO-2FE 
+Jan 25 10:51:12.229 HYPERVISOR: exec_cmd: vm get_status Militech 
+Jan 25 10:51:12.230 HYPERVISOR: exec_cmd: vm slot_add_binding Militech 1 0 PA-2FE-TX 
+Jan 25 10:51:17.990 HYPERVISOR: exec_cmd: nio create_udp udp-2af1e445-5678-42ac-be8d-87d628d7a723 10062 127.0.0.1 10063 
+Jan 25 10:51:18.214 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Militech 1 0 udp-2af1e445-5678-42ac-be8d-87d628d7a723 
+Jan 25 10:51:18.215 HYPERVISOR: exec_cmd: vm get_status Militech 
+Jan 25 10:51:19.095 HYPERVISOR: exec_cmd: nio create_udp udp-35e74d63-b549-4784-82bb-f9bc64958138 10084 127.0.0.1 10085 
+Jan 25 10:51:19.096 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Militech 0 0 udp-35e74d63-b549-4784-82bb-f9bc64958138 
+Jan 25 10:51:19.096 HYPERVISOR: exec_cmd: vm get_status Militech 
+Jan 25 10:52:36.168 HYPERVISOR: exec_cmd: vm get_status Militech 
+Jan 25 10:52:36.169 HYPERVISOR: exec_cmd: vm extract_config Militech 
+Jan 25 10:52:37.087 HYPERVISOR: exec_cmd: vm get_status Militech 
+Jan 25 10:52:37.088 HYPERVISOR: exec_cmd: vm extract_config Militech 
+Jan 25 10:52:37.089 HYPERVISOR: exec_cmd: vm delete Militech 
+Jan 25 10:52:37.090 VM: VM Militech destroyed.
+Jan 25 10:52:37.090 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 25 10:52:37.192 HYPERVISOR: Stopped.
+Jan 25 10:52:37.192 GENERAL: reset done.

@@ -1,0 +1,21 @@
+14:16:07 **** Incremental Build of configuration Debug for project lfsrApp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/brunoa/Documents/cr/proj2/vitis/vitis_workspace/lfsr_mb/export/lfsr_mb/sw/lfsr_mb/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: lfsrApp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/brunoa/Documents/cr/proj2/vitis/vitis_workspace/lfsr_mb/export/lfsr_mb/sw/lfsr_mb/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lfsrApp.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lfsrApp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lfsrApp.elf  |tee "lfsrApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8168	    368	   3104	  11640	   2d78	lfsrApp.elf
+'Finished building: lfsrApp.elf.size'
+' '
+
+14:16:08 Build Finished (took 756ms)
+

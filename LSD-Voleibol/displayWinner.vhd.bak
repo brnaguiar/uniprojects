@@ -1,0 +1,50 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use IEEE.STD_LOGIC_ARITH.ALL;
+
+entity SetCounter is
+	port( clk 		      : in  std_logic;
+			setPontuacao1  : in  std_logic_vector(1 downto 0);
+			setPontuacao2  : in  std_logic_vector(1 downto 0);
+			letterJ        : out std_logic_vector(6 downto 0);
+			letterO        : out std_logic_vector(6 downto 0);
+			letterG        : out std_logic_vector(6 downto 0);
+			letterA        : out std_logic_vector(6 downto 0);
+			letterD        : out std_logic_vector(6 downto 0);
+			letterO        : out std_logic_vector(6 downto 0);
+			letterR        : out std_logic_vector(6 downto 0);
+			numberX        : out std_logic_vector(6 downto 0)); 
+end SetCounter;
+
+architecture Behavioral of SetCounter is
+
+	signal s_set1 : integer := 0;
+	
+
+begin
+	
+	letterJ <= "1100000"; --
+	letterO <= "0100011";
+	letterG <= "0000010"; --
+	letterA <= "0001000";
+	letterD <= "0100001";
+	letterO <= "0100011";
+	letterR <= "0101111";
+	
+	if(setPontuacao1 = "11") then -- jogador1
+		letterX <= "1111001";
+	elsif(setPontuacao2 = "11") then
+		letterX <= "0100100";
+	end if;
+	
+end Behavioral;
+
+--  --a--
+-- |     |    a in bit 0
+-- f     b    b in bit 1
+-- |     |    c in bit 2
+--  --g--     d in bit 3
+-- |     |    e in bit 4
+-- e     c    f in bit 5
+-- |     |    g in bit 6
+--  --d--

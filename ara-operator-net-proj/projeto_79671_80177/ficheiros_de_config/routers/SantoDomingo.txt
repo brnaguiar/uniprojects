@@ -1,0 +1,152 @@
+!
+!
+!
+!
+
+!
+! Last configuration change at 12:26:39 UTC Tue Jan 19 2021
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+!
+hostname SantoDomingo
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+no ip icmp rate-limit unreachable
+ip cef
+!
+!
+!
+!
+!
+!
+no ip domain lookup
+no ipv6 cef
+!
+!
+mpls traffic-eng tunnels
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip tcp synwait-time 5
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 10.10.2.4 255.255.255.255
+!
+interface FastEthernet0/0
+ ip address 10.10.0.4 255.255.255.248
+ speed auto
+ duplex auto
+ mpls traffic-eng tunnels
+ ip rsvp bandwidth percent 40
+!
+interface FastEthernet0/1
+ no ip address
+ shutdown
+ speed auto
+ duplex auto
+!
+interface FastEthernet1/0
+ ip address 4.4.4.2 255.255.255.252
+ speed auto
+ duplex auto
+!
+interface FastEthernet1/1
+ no ip address
+ shutdown
+ speed auto
+ duplex auto
+!
+router ospf 2
+ redistribute bgp 1020 subnets
+ network 10.10.0.0 0.0.255.255 area 0
+ default-information originate always
+ mpls traffic-eng router-id Loopback0
+ mpls traffic-eng area 0
+!
+router bgp 1020
+ bgp log-neighbor-changes
+ neighbor 4.4.4.1 remote-as 40020
+ neighbor 10.10.0.1 remote-as 1020
+ neighbor 10.10.0.2 remote-as 1020
+ neighbor 10.10.0.3 remote-as 1020
+ !
+ address-family ipv4
+  neighbor 4.4.4.1 activate
+  neighbor 4.4.4.1 prefix-list external-network in
+  neighbor 4.4.4.1 prefix-list priv-network out
+  neighbor 4.4.4.1 route-map routes-out out
+  neighbor 10.10.0.1 activate
+  neighbor 10.10.0.1 next-hop-self
+  neighbor 10.10.0.2 activate
+  neighbor 10.10.0.2 next-hop-self
+  neighbor 10.10.0.3 activate
+  neighbor 10.10.0.3 next-hop-self
+ exit-address-family
+!
+ip forward-protocol nd
+!
+ip as-path access-list 1 permit ^$
+!
+no ip http server
+no ip http secure-server
+!
+!
+ip prefix-list external-network seq 100 permit 0.0.0.0/0 le 32
+!
+ip prefix-list priv-network seq 10 deny 10.0.0.0/8 le 32
+ip prefix-list priv-network seq 11 deny 193.136.2.0/24
+ip prefix-list priv-network seq 12 deny 172.16.0.0/12 le 32
+ip prefix-list priv-network seq 13 deny 193.136.3.0/24
+ip prefix-list priv-network seq 14 deny 192.168.0.0/16 le 32
+ip prefix-list priv-network seq 15 deny 193.136.202.0/23
+ip prefix-list priv-network seq 16 deny 0.0.0.0/0
+ip prefix-list priv-network seq 100 permit 0.0.0.0/0 le 32
+!
+route-map routes-out permit 10
+ match as-path 1
+!
+!
+!
+control-plane
+!
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+line vty 0 4
+ login
+!
+!
+end

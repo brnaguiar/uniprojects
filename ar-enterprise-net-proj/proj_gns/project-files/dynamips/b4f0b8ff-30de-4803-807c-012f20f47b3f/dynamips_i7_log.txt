@@ -1,0 +1,91 @@
+Jun 16 17:38:35.438 HYPERVISOR: Release 0.2.17-amd64/Darwin (tag 2017072410)
+Jun 16 17:38:35.438 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51581.
+Jun 16 17:38:35.446 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 16 17:38:35.447 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips 
+Jun 16 17:38:35.447 GENERAL: working_dir=/Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips
+Jun 16 17:38:35.447 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips/6647bc7a-5fd3-4244-8960-4bced2078566 
+Jun 16 17:38:35.447 GENERAL: working_dir=/Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips/6647bc7a-5fd3-4244-8960-4bced2078566
+Jun 16 17:38:35.447 HYPERVISOR: exec_cmd: vm create Aveiro_L3_1 5 c3725 
+Jun 16 17:38:35.447 VM: VM Aveiro_L3_1 created.
+Jun 16 17:38:35.448 HYPERVISOR: exec_cmd: vm set_con_tcp_port Aveiro_L3_1 5006 
+Jun 16 17:38:35.448 HYPERVISOR: exec_cmd: c3725 get_mac_addr Aveiro_L3_1 
+Jun 16 17:38:35.448 HYPERVISOR: exec_cmd: vm set_disk0 Aveiro_L3_1 1 
+Jun 16 17:38:35.449 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 17:38:35.449 HYPERVISOR: exec_cmd: vm set_idle_pc Aveiro_L3_1 0x60a68e70 
+Jun 16 17:38:35.450 HYPERVISOR: exec_cmd: vm set_ios Aveiro_L3_1 /Users/brunoaguiar/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 16 17:38:35.450 HYPERVISOR: exec_cmd: vm set_nvram Aveiro_L3_1 256 
+Jun 16 17:38:35.451 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 17:38:35.451 HYPERVISOR: exec_cmd: vm slot_add_binding Aveiro_L3_1 1 0 NM-16ESW 
+Jun 16 17:38:36.105 HYPERVISOR: exec_cmd: nio create_udp udp-166516ef-2730-4111-9d28-da9f06b6354e 10002 127.0.0.1 10003 
+Jun 16 17:38:36.322 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_L3_1 1 0 udp-166516ef-2730-4111-9d28-da9f06b6354e 
+Jun 16 17:38:36.323 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 17:38:37.191 HYPERVISOR: exec_cmd: nio create_udp udp-8e301037-99e3-4778-b564-4722a38afe65 10014 127.0.0.1 10015 
+Jun 16 17:38:37.193 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_L3_1 1 1 udp-8e301037-99e3-4778-b564-4722a38afe65 
+Jun 16 17:38:37.193 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 17:38:37.389 HYPERVISOR: exec_cmd: nio create_udp udp-657a5ec0-8719-4e42-a470-1d758ca1c955 10026 127.0.0.1 10027 
+Jun 16 17:38:37.391 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_L3_1 1 2 udp-657a5ec0-8719-4e42-a470-1d758ca1c955 
+Jun 16 17:38:37.391 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 17:38:37.721 HYPERVISOR: exec_cmd: nio create_udp udp-4df6a5f1-3f8a-4965-b897-ac15eb72431f 10034 127.0.0.1 10035 
+Jun 16 17:38:37.722 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_L3_1 1 3 udp-4df6a5f1-3f8a-4965-b897-ac15eb72431f 
+Jun 16 17:38:37.723 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 17:38:38.047 HYPERVISOR: exec_cmd: nio create_udp udp-be9bbc3e-8fe6-4bd8-9ead-481e5ed3de12 10040 127.0.0.1 10041 
+Jun 16 17:38:38.049 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_L3_1 1 4 udp-be9bbc3e-8fe6-4bd8-9ead-481e5ed3de12 
+Jun 16 17:38:38.050 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 17:38:39.083 HYPERVISOR: exec_cmd: nio create_udp udp-ae47edbe-3648-43fe-b02c-d5f454b61cdf 10070 127.0.0.1 10071 
+Jun 16 17:38:39.084 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_L3_1 1 5 udp-ae47edbe-3648-43fe-b02c-d5f454b61cdf 
+Jun 16 17:38:39.085 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 17:38:39.186 HYPERVISOR: exec_cmd: nio create_udp udp-93216755-4e0c-464c-8d59-f939b414cd70 10076 127.0.0.1 10077 
+Jun 16 17:38:39.188 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_L3_1 1 6 udp-93216755-4e0c-464c-8d59-f939b414cd70 
+Jun 16 17:38:39.188 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 17:38:40.254 HYPERVISOR: exec_cmd: nio create_udp udp-3c8b7e2a-7a3d-401e-a514-8de4ebcfca5f 10106 127.0.0.1 10107 
+Jun 16 17:38:40.256 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_L3_1 1 7 udp-3c8b7e2a-7a3d-401e-a514-8de4ebcfca5f 
+Jun 16 17:38:40.256 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 17:38:40.676 HYPERVISOR: exec_cmd: nio create_udp udp-391593fa-1a5a-4b72-a5d3-06ccdeb33fcf 10118 127.0.0.1 10119 
+Jun 16 17:38:40.678 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_L3_1 1 8 udp-391593fa-1a5a-4b72-a5d3-06ccdeb33fcf 
+Jun 16 17:38:40.678 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 17:39:13.270 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 17:39:13.270 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Aveiro_L3_1 1 5 
+Jun 16 17:39:13.271 HYPERVISOR: exec_cmd: nio delete udp-ae47edbe-3648-43fe-b02c-d5f454b61cdf 
+Jun 16 17:39:14.261 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 17:39:14.261 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Aveiro_L3_1 1 6 
+Jun 16 17:39:14.262 HYPERVISOR: exec_cmd: nio delete udp-93216755-4e0c-464c-8d59-f939b414cd70 
+Jun 16 17:39:25.344 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 17:39:25.345 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Aveiro_L3_1 1 8 
+Jun 16 17:39:25.346 HYPERVISOR: exec_cmd: nio delete udp-391593fa-1a5a-4b72-a5d3-06ccdeb33fcf 
+Jun 16 17:39:25.657 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 17:39:25.657 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Aveiro_L3_1 1 7 
+Jun 16 17:39:25.658 HYPERVISOR: exec_cmd: nio delete udp-3c8b7e2a-7a3d-401e-a514-8de4ebcfca5f 
+Jun 16 17:41:44.223 HYPERVISOR: exec_cmd: vm set_ghost_status Aveiro_L3_1 2 
+Jun 16 17:41:44.223 HYPERVISOR: exec_cmd: vm set_ghost_file Aveiro_L3_1 /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jun 16 17:41:44.224 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 17:41:44.224 HYPERVISOR: exec_cmd: vm set_config Aveiro_L3_1 configs/i5_startup-config.cfg 
+Jun 16 17:41:44.225 HYPERVISOR: exec_cmd: vm start Aveiro_L3_1 
+Jun 16 17:41:47.926 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 17:41:47.926 HYPERVISOR: exec_cmd: vm stop Aveiro_L3_1 
+Jun 16 17:41:48.100 VM: VM Aveiro_L3_1 shutdown.
+Jun 16 17:41:48.101 HYPERVISOR: exec_cmd: vm extract_config Aveiro_L3_1 
+Jun 16 17:43:35.383 HYPERVISOR: exec_cmd: vm set_ghost_status Aveiro_L3_1 2 
+Jun 16 17:43:35.384 HYPERVISOR: exec_cmd: vm set_ghost_file Aveiro_L3_1 /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jun 16 17:43:35.384 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 17:43:35.384 HYPERVISOR: exec_cmd: vm set_config Aveiro_L3_1 configs/i5_startup-config.cfg 
+Jun 16 17:43:35.385 HYPERVISOR: exec_cmd: vm start Aveiro_L3_1 
+Jun 16 17:44:50.755 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 17:44:50.755 HYPERVISOR: exec_cmd: vm stop Aveiro_L3_1 
+Jun 16 17:44:50.930 VM: VM Aveiro_L3_1 shutdown.
+Jun 16 17:44:50.930 HYPERVISOR: exec_cmd: vm extract_config Aveiro_L3_1 
+Jun 16 19:04:42.465 HYPERVISOR: exec_cmd: vm set_ghost_status Aveiro_L3_1 2 
+Jun 16 19:04:42.465 HYPERVISOR: exec_cmd: vm set_ghost_file Aveiro_L3_1 /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jun 16 19:04:42.466 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 19:04:42.466 HYPERVISOR: exec_cmd: vm set_config Aveiro_L3_1 configs/i5_startup-config.cfg 
+Jun 16 19:04:42.467 HYPERVISOR: exec_cmd: vm start Aveiro_L3_1 
+Jun 16 23:57:16.117 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 23:57:16.117 HYPERVISOR: exec_cmd: vm stop Aveiro_L3_1 
+Jun 16 23:57:16.287 VM: VM Aveiro_L3_1 shutdown.
+Jun 16 23:57:16.288 HYPERVISOR: exec_cmd: vm extract_config Aveiro_L3_1 
+Jun 16 23:57:17.760 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_1 
+Jun 16 23:57:17.764 HYPERVISOR: exec_cmd: vm extract_config Aveiro_L3_1 
+Jun 16 23:57:17.768 HYPERVISOR: exec_cmd: vm delete Aveiro_L3_1 
+Jun 16 23:57:17.768 VM: VM Aveiro_L3_1 destroyed.
+Jun 16 23:57:17.776 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 16 23:57:18.238 HYPERVISOR: Stopped.
+Jun 16 23:57:18.238 GENERAL: reset done.

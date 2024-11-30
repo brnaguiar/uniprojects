@@ -1,0 +1,27 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+entity starSort is
+	port( clk       : in  std_logic;
+			inStar0   : in  std_logic_vector(5 downto 0);
+			inStar1   : in  std_logic_vector(5 downto 0);
+			outStar0  : out std_logic_vector(5 downto 0);
+			outStar1  : out std_logic_vector(5 downto 0));
+end starSort;
+
+architecture Combinatorial of starSort is
+begin
+	process(clk)
+	begin
+		if (rising_edge(clk)) then
+			if (inStar0 < inStar1) then
+				outStar0 <= inStar0;
+				outStar1 <= inStar1;
+			else
+				outStar0 <= inStar1;
+				outStar1 <= inStar0;
+			end if;
+		end if;
+	end process;
+end Combinatorial;

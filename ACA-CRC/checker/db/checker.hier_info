@@ -1,0 +1,144 @@
+|checker
+clk => DFlipFlop:flipFlop1.clk
+clk => DFlipFlop:flipFlop2.clk
+clk => DFlipFlop:flipFlop3.clk
+clk => DFlipFlop:flipFlop4.clk
+clk => DFlipFlop:flipFlop5.clk
+clk => DFlipFlop:flipFlop6.clk
+clk => DFlipFlop:flipFlop7.clk
+clk => DFlipFlop:flipFlop8.clk
+clk => controlROM:cR1.clk
+data_in => xor2_1:xor1.in0
+error <= controlROM:cR1.flag
+
+
+|checker|xor2_1:xor1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|checker|DFlipFlop:flipFlop1
+clk => nQ~reg0.CLK
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => nQ~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|checker|xor2_1:xor2
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|checker|DFlipFlop:flipFlop2
+clk => nQ~reg0.CLK
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => nQ~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|checker|xor2_1:xor3
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|checker|DFlipFlop:flipFlop3
+clk => nQ~reg0.CLK
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => nQ~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|checker|xor2_1:xor4
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|checker|DFlipFlop:flipFlop4
+clk => nQ~reg0.CLK
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => nQ~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|checker|DFlipFlop:flipFlop5
+clk => nQ~reg0.CLK
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => nQ~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|checker|xor2_1:xor5
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|checker|DFlipFlop:flipFlop6
+clk => nQ~reg0.CLK
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => nQ~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|checker|DFlipFlop:flipFlop7
+clk => nQ~reg0.CLK
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => nQ~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|checker|DFlipFlop:flipFlop8
+clk => nQ~reg0.CLK
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+D => nQ~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|checker|controlROM:cR1
+clk => flag~reg0.CLK
+clk => s_clkCounter[0].CLK
+clk => s_clkCounter[1].CLK
+clk => s_clkCounter[2].CLK
+clk => s_clkCounter[3].CLK
+clk => s_clkCounter[4].CLK
+rem_in[0] => flag.IN0
+rem_in[1] => flag.IN1
+rem_in[2] => flag.IN1
+rem_in[3] => flag.IN1
+rem_in[4] => flag.IN1
+rem_in[5] => flag.IN1
+rem_in[6] => flag.IN1
+rem_in[7] => flag.IN1
+flag <= flag~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <h3 style="margin-top: 30px">BREAKING NEWS:</h3>
+                    <br/>
+                    <!-- Notícias -->
+                    <div class="row">
+                        {% for entry in news %}
+                            {% if entry|length != 0 %}
+                                <ul class="col-lg-6">
+                                    <div class="card shadow mb-4">
+                                        <div class="card-header py-3">
+                                            <h6 class="m-0 font-weight-bold text-primary">{{ entry.0 }}</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-2">
+                                                    <div class="text">
+                                                        {{ entry.3 | safe }}
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <img src="{{entry.4}}"/>
+                                                </div>
+                                            </div>
+                                            <a target="_blank" rel="nofollow" href="{{ entry.1 }}">Know more &rarr;</a>
+                                        </div>
+                                    </div>
+                                </ul>
+                            {% endif %}
+                        {% endfor %}
+                   </div>
+                </div>
+            </div>
+    <!-- End of Main Content -->
+
+{% endblock %}

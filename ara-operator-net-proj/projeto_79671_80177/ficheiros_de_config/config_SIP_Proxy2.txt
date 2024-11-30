@@ -1,0 +1,24 @@
+sudo ip addr add 100.200.1.10/24 dev enp0s3
+sudo ip route add default via 100.200.1.1 
+
+sudo vim /etc/asterisk/sip.conf 
+
+[SIProxy2]
+type=peer
+host= 10.20.1.10
+secret=labcom
+username=SIProxy2 
+
+
+sudo vim /etc/asterisk/extensions.conf
+
+[phones]
+
+#External
+exten => _X.,1,Answer(500)
+exten => _X.,2,PlayBack(vm-received)
+exten => _X.,3,SayDigits(${EXTEN:3})
+exten => _X.,n,PlayBack(vm-goodbye)
+exten => _X.,n,Hangup()
+
+

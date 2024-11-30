@@ -1,0 +1,41 @@
+Jan 25 10:51:11.929 HYPERVISOR: Release 0.2.17-amd64/Darwin (tag 2017072410)
+Jan 25 10:51:11.929 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50465.
+Jan 25 10:51:11.943 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 25 10:51:11.944 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips 
+Jan 25 10:51:11.944 GENERAL: working_dir=/Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips
+Jan 25 10:51:11.945 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips/8af5e250-b8a5-453a-b5e4-4b9fb4df8bc0 
+Jan 25 10:51:11.945 GENERAL: working_dir=/Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips/8af5e250-b8a5-453a-b5e4-4b9fb4df8bc0
+Jan 25 10:51:11.946 HYPERVISOR: exec_cmd: vm create WestBrook 6 c7200 
+Jan 25 10:51:11.947 VM: VM WestBrook created.
+Jan 25 10:51:11.949 HYPERVISOR: exec_cmd: vm set_con_tcp_port WestBrook 5042 
+Jan 25 10:51:11.950 HYPERVISOR: exec_cmd: c7200 get_mac_addr WestBrook 
+Jan 25 10:51:11.951 HYPERVISOR: exec_cmd: vm get_status WestBrook 
+Jan 25 10:51:11.951 HYPERVISOR: exec_cmd: vm slot_add_binding WestBrook 0 0 C7200-IO-FE 
+Jan 25 10:51:11.952 HYPERVISOR: exec_cmd: vm set_disk0 WestBrook 0 
+Jan 25 10:51:11.953 HYPERVISOR: exec_cmd: vm get_status WestBrook 
+Jan 25 10:51:11.953 HYPERVISOR: exec_cmd: vm set_idle_pc WestBrook 0x60608040 
+Jan 25 10:51:11.954 HYPERVISOR: exec_cmd: vm set_ios WestBrook /Users/brunoaguiar/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 25 10:51:11.955 HYPERVISOR: exec_cmd: c7200 set_mac_addr WestBrook ca06.5cae.0000 
+Jan 25 10:51:11.956 HYPERVISOR: exec_cmd: vm set_nvram WestBrook 512 
+Jan 25 10:51:11.956 HYPERVISOR: exec_cmd: vm set_ram WestBrook 512 
+Jan 25 10:51:11.957 HYPERVISOR: exec_cmd: vm get_status WestBrook 
+Jan 25 10:51:11.957 HYPERVISOR: exec_cmd: vm slot_remove_binding WestBrook 0 0 
+Jan 25 10:51:11.958 HYPERVISOR: exec_cmd: vm get_status WestBrook 
+Jan 25 10:51:11.958 HYPERVISOR: exec_cmd: vm slot_add_binding WestBrook 0 0 C7200-IO-2FE 
+Jan 25 10:51:11.959 HYPERVISOR: exec_cmd: vm get_status WestBrook 
+Jan 25 10:51:11.959 HYPERVISOR: exec_cmd: vm slot_add_binding WestBrook 1 0 PA-2FE-TX 
+Jan 25 10:51:16.373 HYPERVISOR: exec_cmd: nio create_udp udp-982ae364-e54a-4c6c-af44-729dbe52eac1 10034 127.0.0.1 10035 
+Jan 25 10:51:16.594 HYPERVISOR: exec_cmd: vm slot_add_nio_binding WestBrook 1 0 udp-982ae364-e54a-4c6c-af44-729dbe52eac1 
+Jan 25 10:51:16.595 HYPERVISOR: exec_cmd: vm get_status WestBrook 
+Jan 25 10:51:17.029 HYPERVISOR: exec_cmd: nio create_udp udp-819af5a1-23ec-44f3-8a6b-b6bba76d129d 10044 127.0.0.1 10045 
+Jan 25 10:51:17.031 HYPERVISOR: exec_cmd: vm slot_add_nio_binding WestBrook 0 0 udp-819af5a1-23ec-44f3-8a6b-b6bba76d129d 
+Jan 25 10:51:17.031 HYPERVISOR: exec_cmd: vm get_status WestBrook 
+Jan 25 10:52:36.141 HYPERVISOR: exec_cmd: vm get_status WestBrook 
+Jan 25 10:52:36.142 HYPERVISOR: exec_cmd: vm extract_config WestBrook 
+Jan 25 10:52:36.923 HYPERVISOR: exec_cmd: vm get_status WestBrook 
+Jan 25 10:52:36.924 HYPERVISOR: exec_cmd: vm extract_config WestBrook 
+Jan 25 10:52:36.925 HYPERVISOR: exec_cmd: vm delete WestBrook 
+Jan 25 10:52:36.925 VM: VM WestBrook destroyed.
+Jan 25 10:52:36.926 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 25 10:52:37.388 HYPERVISOR: Stopped.
+Jan 25 10:52:37.388 GENERAL: reset done.

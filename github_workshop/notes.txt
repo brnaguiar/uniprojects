@@ -1,0 +1,6 @@
+git push -u origin master
+
+o -u significa upstream que é como se fosse a nossa organizacao, que pode ser ou ter varios repositorios e nos podemos buscar content de outros repositorios. o origin acho que é o repositio standard.
+
+opa sim
+

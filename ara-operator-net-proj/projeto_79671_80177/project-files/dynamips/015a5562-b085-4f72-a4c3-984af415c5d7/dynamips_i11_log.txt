@@ -1,0 +1,22 @@
+Jan 25 10:51:12.051 HYPERVISOR: Release 0.2.17-amd64/Darwin (tag 2017072410)
+Jan 25 10:51:12.051 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50471.
+Jan 25 10:51:12.060 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 25 10:51:12.061 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips 
+Jan 25 10:51:12.061 GENERAL: working_dir=/Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips
+Jan 25 10:51:12.061 HYPERVISOR: exec_cmd: ethsw create OperatorB'sCore 
+Jan 25 10:51:17.040 HYPERVISOR: exec_cmd: nio create_udp udp-b383710e-ea6c-45c6-9bbb-161df08cdf6e 10043 127.0.0.1 10042 
+Jan 25 10:51:17.041 HYPERVISOR: exec_cmd: ethsw add_nio OperatorB'sCore udp-b383710e-ea6c-45c6-9bbb-161df08cdf6e 
+Jan 25 10:51:17.057 HYPERVISOR: exec_cmd: ethsw set_access_port OperatorB'sCore udp-b383710e-ea6c-45c6-9bbb-161df08cdf6e 1 
+Jan 25 10:51:17.156 HYPERVISOR: exec_cmd: nio create_udp udp-45388d41-9413-468f-9d5e-519e3b8140df 10046 127.0.0.1 10047 
+Jan 25 10:51:17.156 HYPERVISOR: exec_cmd: ethsw add_nio OperatorB'sCore udp-45388d41-9413-468f-9d5e-519e3b8140df 
+Jan 25 10:51:17.175 HYPERVISOR: exec_cmd: ethsw set_access_port OperatorB'sCore udp-45388d41-9413-468f-9d5e-519e3b8140df 1 
+Jan 25 10:51:17.512 HYPERVISOR: exec_cmd: nio create_udp udp-a42fe4db-388c-4640-9bb2-4ab398cde48f 10050 127.0.0.1 10051 
+Jan 25 10:51:17.512 HYPERVISOR: exec_cmd: ethsw add_nio OperatorB'sCore udp-a42fe4db-388c-4640-9bb2-4ab398cde48f 
+Jan 25 10:51:17.525 HYPERVISOR: exec_cmd: ethsw set_access_port OperatorB'sCore udp-a42fe4db-388c-4640-9bb2-4ab398cde48f 1 
+Jan 25 10:51:17.866 HYPERVISOR: exec_cmd: nio create_udp udp-9c3f91cf-274a-4a3d-8191-80375e6cc02b 10055 127.0.0.1 10054 
+Jan 25 10:51:17.867 HYPERVISOR: exec_cmd: ethsw add_nio OperatorB'sCore udp-9c3f91cf-274a-4a3d-8191-80375e6cc02b 
+Jan 25 10:51:17.875 HYPERVISOR: exec_cmd: ethsw set_access_port OperatorB'sCore udp-9c3f91cf-274a-4a3d-8191-80375e6cc02b 1 
+Jan 25 10:52:36.665 HYPERVISOR: exec_cmd: ethsw delete OperatorB'sCore 
+Jan 25 10:52:36.739 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 25 10:52:37.006 HYPERVISOR: Stopped.
+Jan 25 10:52:37.006 GENERAL: reset done.

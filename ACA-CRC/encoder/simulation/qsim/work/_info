@@ -1,0 +1,150 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Bruno/Documents/Assignment1/simulation/qsim
+Eencoder
+Z0 w1607368464
+Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z2 DPx9 cycloneiv 19 cycloneiv_atom_pack 0 22 ^M[R>L941CzW^5^z4gfb52
+Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z6 DPx9 cycloneiv 20 cycloneiv_components 0 22 A=5Z=j^V:4BYGPNKNFE9o0
+!i122 46
+Z7 dC:/Users/Bruno/Documents/Assignment1/encoder/simulation/qsim
+Z8 8encoder.vho
+Z9 Fencoder.vho
+l0
+L78 1
+V=jRjlG^7MS@BobWAHciF51
+!s100 QfnXN:dYb@S:EJdoX]=OE1
+Z10 OV;C;2020.1;71
+32
+Z11 !s110 1607368465
+!i10b 1
+Z12 !s108 1607368465.000000
+Z13 !s90 -work|work|encoder.vho|
+Z14 !s107 encoder.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 7 encoder 0 22 =jRjlG^7MS@BobWAHciF51
+!i122 46
+l174
+L112 663
+V5U<PiPJ@eihKU4dTb4ZMK2
+!s100 `_HBL88ilg6hFSV?[ef]01
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eencoder_vhd_vec_tst
+Z17 w1607368463
+R4
+R5
+!i122 47
+R7
+Z18 8Waveform2.vwf.vht
+Z19 FWaveform2.vwf.vht
+l0
+L32 1
+Vd<U=ngB?KKT0ZHFAl_0cY0
+!s100 1PRb<UZKhe9emhYL8QOLZ3
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -work|work|Waveform2.vwf.vht|
+!s107 Waveform2.vwf.vht|
+!i113 1
+R15
+R16
+Aencoder_arch
+R4
+R5
+Z21 DEx4 work 19 encoder_vhd_vec_tst 0 22 d<U=ngB?KKT0ZHFAl_0cY0
+!i122 47
+l45
+L34 115
+VXh6d4[n:hkYXCU3F0j?@Y0
+!s100 5KhLQ3d]NMVf8jAmL__VE1
+R10
+32
+R11
+!i10b 1
+R12
+R20
+Z22 !s107 Waveform2.vwf.vht|
+!i113 1
+R15
+R16
+Ehard_block
+R0
+R1
+R2
+R3
+R4
+R5
+R6
+!i122 46
+R7
+R8
+R9
+l0
+L35 1
+V5mcF]JUg7TS^l0EMa_h4A1
+!s100 Q?IbEnM>aW3cc=hi`GCc71
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 10 hard_block 0 22 5mcF]JUg7TS^l0EMa_h4A1
+!i122 46
+l65
+L51 20
+VMkbPfL8S?h^i>Mg3GSGD`1
+!s100 O>:lWQfHCcIaXgQ<=Tgn10
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16

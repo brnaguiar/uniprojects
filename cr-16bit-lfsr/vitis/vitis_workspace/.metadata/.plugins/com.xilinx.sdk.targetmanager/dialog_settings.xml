@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="lfsrApp_system-bitFile" value="${project_loc:lfsrApp}/_ide/bitstream/lfsr_mb.bit"/>
+	<item key="lfsrApp_system-bmmFile" value="${project_loc:lfsrApp}/_ide/bitstream/lfsr_mb.mmi"/>
+	<item key="lfsrApp_system-target" value="Local"/>
+	<item key="lfsrApp_system-device" value="Auto Detect"/>
+	<item key="lfsrApp_system-partial_bit" value="false"/>
+	<item key="lfsrApp_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="lfsrApp_system"/>
+	<item key="lfsrApp_system-microblaze_0-initElf" value="bootloop"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Nexys4 210274674840A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Nexys4-210274674840A-13631093-0&quot;}}]}"/>
+</section>

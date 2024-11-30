@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Tue Dec 08 14:48:20 2020
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : checker
+Top-level Entity Name : checker
+Family : Cyclone IV GX
+Total logic elements : 18
+    Total combinational functions : 15
+    Dedicated logic registers : 14
+Total registers : 14
+Total pins : 3
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

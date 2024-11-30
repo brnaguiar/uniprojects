@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Jun 03 00:31:56 2017
+Quartus Prime Version : 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+Revision Name : Voleibol
+Top-level Entity Name : Voleibol
+Family : Cyclone IV E
+Total logic elements : 770
+    Total combinational functions : 768
+    Dedicated logic registers : 279
+Total registers : 279
+Total pins : 80
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

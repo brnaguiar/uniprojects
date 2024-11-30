@@ -1,0 +1,65 @@
+sudo ip addr add 10.20.1.10/24 dev enp0s3
+sudo ip route add default via 10.20.1.1 
+
+sudo vim /etc/asterisk/sip.conf 
+
+[Arasaka_N]
+type=friend
+host=dynamic 
+secret=labcom
+context=phones  
+allow=all
+
+[Arasaka_S]
+type=friend
+host=dynamic 
+secret=labcom
+context=phones  
+allow=all
+
+[Militech]
+type=friend
+host=dynamic 
+secret=labcom
+context=phones  
+allow=all
+
+[SIProxy2]
+type=peer
+host=100.200.1.10 
+secret=labcom
+username=SIProxy2 
+
+
+sudo vim /etc/asterisk/extensions.conf
+
+[phones]
+exten => 2000,1,Answer(500)
+exten => 2000,n,SayAlpha(sip1)
+exten => 2000,n,Playback(vm-goodbye)
+exten => 2000,n,Hangup()
+
+#Arasaka_N
+exten => _234101.,1,Answer(500)
+exten => _234101.,2,PlayBack(vm-received)
+exten => _234101.,3,SayDigits(${EXTEN:3})
+exten => _234101.,n,PlayBack(vm-goodbye)
+exten => _234101.,n,Hangup()
+
+#Arasaka_S
+exten => _289101.,1,Answer(500)
+exten => _289101.,2,PlayBack(vm-received)
+exten => _289101.,3,SayDigits(${EXTEN:3})
+exten => _289101.,n,PlayBack(vm-goodbye)
+exten => _289101.,n,Hangup()
+
+#Militech 
+exten => _289102.,1,Answer(500)
+exten => _289102.,2,PlayBack(vm-received)
+exten => _289102.,3,SayDigits(${EXTEN:3})
+exten => _289102.,n,PlayBack(vm-goodbye)
+exten => _289102.,n,Hangup()
+
+#External
+exten => _.,1,Dial(SIP/${EXTEN}@SIProxy2,10)
+exten => _X.,n,Hangup()

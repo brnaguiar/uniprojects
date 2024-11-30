@@ -1,0 +1,63 @@
+Jun 21 13:25:43.220 HYPERVISOR: Release 0.2.17-amd64/Darwin (tag 2017072410)
+Jun 21 13:25:43.220 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49860.
+Jun 21 13:25:43.231 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 21 13:25:43.231 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips 
+Jun 21 13:25:43.231 GENERAL: working_dir=/Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips
+Jun 21 13:25:43.231 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips/1a41af7c-8500-4d4a-aa87-0375dedf6142 
+Jun 21 13:25:43.231 GENERAL: working_dir=/Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips/1a41af7c-8500-4d4a-aa87-0375dedf6142
+Jun 21 13:25:43.231 HYPERVISOR: exec_cmd: vm create AVEIRO_ISP_PT2 8 c7200 
+Jun 21 13:25:43.232 VM: VM AVEIRO_ISP_PT2 created.
+Jun 21 13:25:43.232 HYPERVISOR: exec_cmd: vm set_con_tcp_port AVEIRO_ISP_PT2 5009 
+Jun 21 13:25:43.232 HYPERVISOR: exec_cmd: c7200 get_mac_addr AVEIRO_ISP_PT2 
+Jun 21 13:25:43.232 HYPERVISOR: exec_cmd: vm get_status AVEIRO_ISP_PT2 
+Jun 21 13:25:43.232 HYPERVISOR: exec_cmd: vm slot_add_binding AVEIRO_ISP_PT2 0 0 C7200-IO-FE 
+Jun 21 13:25:43.233 HYPERVISOR: exec_cmd: vm set_disk0 AVEIRO_ISP_PT2 0 
+Jun 21 13:25:43.233 HYPERVISOR: exec_cmd: vm get_status AVEIRO_ISP_PT2 
+Jun 21 13:25:43.233 HYPERVISOR: exec_cmd: vm set_idle_pc AVEIRO_ISP_PT2 0x60608040 
+Jun 21 13:25:43.234 HYPERVISOR: exec_cmd: vm set_ios AVEIRO_ISP_PT2 /Users/brunoaguiar/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 21 13:25:43.234 HYPERVISOR: exec_cmd: c7200 set_mac_addr AVEIRO_ISP_PT2 ca08.566d.0000 
+Jun 21 13:25:43.235 HYPERVISOR: exec_cmd: vm set_nvram AVEIRO_ISP_PT2 512 
+Jun 21 13:25:43.235 HYPERVISOR: exec_cmd: vm set_ram AVEIRO_ISP_PT2 512 
+Jun 21 13:25:43.235 HYPERVISOR: exec_cmd: vm get_status AVEIRO_ISP_PT2 
+Jun 21 13:25:43.235 HYPERVISOR: exec_cmd: vm slot_remove_binding AVEIRO_ISP_PT2 0 0 
+Jun 21 13:25:43.236 HYPERVISOR: exec_cmd: vm get_status AVEIRO_ISP_PT2 
+Jun 21 13:25:43.236 HYPERVISOR: exec_cmd: vm slot_add_binding AVEIRO_ISP_PT2 0 0 C7200-IO-2FE 
+Jun 21 13:25:43.236 HYPERVISOR: exec_cmd: vm get_status AVEIRO_ISP_PT2 
+Jun 21 13:25:43.236 HYPERVISOR: exec_cmd: vm slot_add_binding AVEIRO_ISP_PT2 1 0 PA-2FE-TX 
+Jun 21 13:25:44.119 HYPERVISOR: exec_cmd: nio create_udp udp-1f86aebe-bb4e-4ba0-b11b-039a7868847a 10004 127.0.0.1 10005 
+Jun 21 13:25:44.336 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AVEIRO_ISP_PT2 1 0 udp-1f86aebe-bb4e-4ba0-b11b-039a7868847a 
+Jun 21 13:25:44.337 HYPERVISOR: exec_cmd: vm get_status AVEIRO_ISP_PT2 
+Jun 21 13:25:44.889 HYPERVISOR: exec_cmd: nio create_udp udp-ff209ddc-a460-4d4c-ad47-e078a206b856 10018 127.0.0.1 10019 
+Jun 21 13:25:44.891 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AVEIRO_ISP_PT2 0 0 udp-ff209ddc-a460-4d4c-ad47-e078a206b856 
+Jun 21 13:25:44.891 HYPERVISOR: exec_cmd: vm get_status AVEIRO_ISP_PT2 
+Jun 21 13:25:49.551 HYPERVISOR: exec_cmd: nio create_udp udp-3cd26346-f387-4cc5-9843-e5980ce87af8 10126 127.0.0.1 10127 
+Jun 21 13:25:49.553 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AVEIRO_ISP_PT2 1 1 udp-3cd26346-f387-4cc5-9843-e5980ce87af8 
+Jun 21 13:25:49.553 HYPERVISOR: exec_cmd: vm get_status AVEIRO_ISP_PT2 
+Jun 21 13:26:04.463 HYPERVISOR: exec_cmd: vm set_ghost_status AVEIRO_ISP_PT2 2 
+Jun 21 13:26:04.463 HYPERVISOR: exec_cmd: vm set_ghost_file AVEIRO_ISP_PT2 /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips/c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 21 13:26:04.463 HYPERVISOR: exec_cmd: vm get_status AVEIRO_ISP_PT2 
+Jun 21 13:26:04.464 HYPERVISOR: exec_cmd: vm set_config AVEIRO_ISP_PT2 configs/i8_startup-config.cfg configs/i8_private-config.cfg 
+Jun 21 13:26:04.464 HYPERVISOR: exec_cmd: vm start AVEIRO_ISP_PT2 
+Jun 21 13:26:34.687 HYPERVISOR: exec_cmd: vm extract_config AVEIRO_ISP_PT2 
+Jun 21 13:27:34.695 HYPERVISOR: exec_cmd: vm extract_config AVEIRO_ISP_PT2 
+Jun 21 14:01:01.596 HYPERVISOR: exec_cmd: vm get_status AVEIRO_ISP_PT2 
+Jun 21 14:01:01.597 HYPERVISOR: exec_cmd: vm stop AVEIRO_ISP_PT2 
+Jun 21 14:01:01.728 VM: VM AVEIRO_ISP_PT2 shutdown.
+Jun 21 14:01:01.728 HYPERVISOR: exec_cmd: vm extract_config AVEIRO_ISP_PT2 
+Jun 21 14:01:07.076 HYPERVISOR: exec_cmd: vm set_ghost_status AVEIRO_ISP_PT2 2 
+Jun 21 14:01:07.076 HYPERVISOR: exec_cmd: vm set_ghost_file AVEIRO_ISP_PT2 /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips/c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 21 14:01:07.077 HYPERVISOR: exec_cmd: vm get_status AVEIRO_ISP_PT2 
+Jun 21 14:01:07.077 HYPERVISOR: exec_cmd: vm set_config AVEIRO_ISP_PT2 configs/i8_startup-config.cfg configs/i8_private-config.cfg 
+Jun 21 14:01:07.078 HYPERVISOR: exec_cmd: vm start AVEIRO_ISP_PT2 
+Jun 21 14:51:07.712 HYPERVISOR: exec_cmd: vm extract_config AVEIRO_ISP_PT2 
+Jun 21 15:25:45.389 HYPERVISOR: exec_cmd: vm get_status AVEIRO_ISP_PT2 
+Jun 21 15:25:45.389 HYPERVISOR: exec_cmd: vm stop AVEIRO_ISP_PT2 
+Jun 21 15:25:45.510 VM: VM AVEIRO_ISP_PT2 shutdown.
+Jun 21 15:25:45.510 HYPERVISOR: exec_cmd: vm extract_config AVEIRO_ISP_PT2 
+Jun 21 15:25:47.403 HYPERVISOR: exec_cmd: vm get_status AVEIRO_ISP_PT2 
+Jun 21 15:25:47.403 HYPERVISOR: exec_cmd: vm extract_config AVEIRO_ISP_PT2 
+Jun 21 15:25:47.405 HYPERVISOR: exec_cmd: vm delete AVEIRO_ISP_PT2 
+Jun 21 15:25:47.405 VM: VM AVEIRO_ISP_PT2 destroyed.
+Jun 21 15:25:47.406 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 21 15:25:47.486 HYPERVISOR: Stopped.
+Jun 21 15:25:47.486 GENERAL: reset done.

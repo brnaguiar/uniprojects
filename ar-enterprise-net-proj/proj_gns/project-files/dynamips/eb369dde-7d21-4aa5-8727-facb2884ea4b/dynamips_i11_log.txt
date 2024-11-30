@@ -1,0 +1,28 @@
+Jun 16 17:38:35.606 HYPERVISOR: Release 0.2.17-amd64/Darwin (tag 2017072410)
+Jun 16 17:38:35.606 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51595.
+Jun 16 17:38:35.617 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 16 17:38:35.617 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips 
+Jun 16 17:38:35.617 GENERAL: working_dir=/Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips
+Jun 16 17:38:35.617 HYPERVISOR: exec_cmd: ethsw create internet 
+Jun 16 17:38:39.319 HYPERVISOR: exec_cmd: nio create_udp udp-1ae520aa-9ef4-4a05-b0f1-0486e7662711 10079 127.0.0.1 10078 
+Jun 16 17:38:39.319 HYPERVISOR: exec_cmd: ethsw add_nio internet udp-1ae520aa-9ef4-4a05-b0f1-0486e7662711 
+Jun 16 17:38:39.341 HYPERVISOR: exec_cmd: ethsw set_access_port internet udp-1ae520aa-9ef4-4a05-b0f1-0486e7662711 1 
+Jun 16 17:38:39.450 HYPERVISOR: exec_cmd: nio create_udp udp-cdfd82de-d1d4-452d-ae6f-69f7337551bd 10083 127.0.0.1 10082 
+Jun 16 17:38:39.450 HYPERVISOR: exec_cmd: ethsw add_nio internet udp-cdfd82de-d1d4-452d-ae6f-69f7337551bd 
+Jun 16 17:38:39.470 HYPERVISOR: exec_cmd: ethsw set_access_port internet udp-cdfd82de-d1d4-452d-ae6f-69f7337551bd 1 
+Jun 16 17:38:41.336 HYPERVISOR: exec_cmd: nio create_udp udp-eed3d883-1799-4f5e-be71-2dd79251863a 10135 127.0.0.1 10134 
+Jun 16 17:38:41.337 HYPERVISOR: exec_cmd: ethsw add_nio internet udp-eed3d883-1799-4f5e-be71-2dd79251863a 
+Jun 16 17:38:41.345 HYPERVISOR: exec_cmd: ethsw set_access_port internet udp-eed3d883-1799-4f5e-be71-2dd79251863a 1 
+Jun 16 17:38:41.674 HYPERVISOR: exec_cmd: nio create_udp udp-772b92ac-45f4-476d-b43b-9a833fae6963 10139 127.0.0.1 10138 
+Jun 16 17:38:41.675 HYPERVISOR: exec_cmd: ethsw add_nio internet udp-772b92ac-45f4-476d-b43b-9a833fae6963 
+Jun 16 17:38:41.684 HYPERVISOR: exec_cmd: ethsw set_access_port internet udp-772b92ac-45f4-476d-b43b-9a833fae6963 1 
+Jun 16 17:38:42.019 HYPERVISOR: exec_cmd: nio create_udp udp-6de59ef9-7032-41db-8576-e1106f0c5478 10143 127.0.0.1 10142 
+Jun 16 17:38:42.019 HYPERVISOR: exec_cmd: ethsw add_nio internet udp-6de59ef9-7032-41db-8576-e1106f0c5478 
+Jun 16 17:38:42.022 HYPERVISOR: exec_cmd: ethsw set_access_port internet udp-6de59ef9-7032-41db-8576-e1106f0c5478 1 
+Jun 16 17:38:42.350 HYPERVISOR: exec_cmd: nio create_udp udp-014fd0ad-5e0f-4327-b646-c37a8b05e0ec 10147 127.0.0.1 10146 
+Jun 16 17:38:42.351 HYPERVISOR: exec_cmd: ethsw add_nio internet udp-014fd0ad-5e0f-4327-b646-c37a8b05e0ec 
+Jun 16 17:38:42.356 HYPERVISOR: exec_cmd: ethsw set_access_port internet udp-014fd0ad-5e0f-4327-b646-c37a8b05e0ec 1 
+Jun 16 23:57:17.365 HYPERVISOR: exec_cmd: ethsw delete internet 
+Jun 16 23:57:17.488 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 16 23:57:17.728 HYPERVISOR: Stopped.
+Jun 16 23:57:17.729 GENERAL: reset done.

@@ -1,0 +1,41 @@
+Jan 25 10:51:11.817 HYPERVISOR: Release 0.2.17-amd64/Darwin (tag 2017072410)
+Jan 25 10:51:11.817 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50456.
+Jan 25 10:51:11.828 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 25 10:51:11.828 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips 
+Jan 25 10:51:11.828 GENERAL: working_dir=/Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips
+Jan 25 10:51:11.829 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips/97a8365e-5abf-484b-8f24-52d07a490991 
+Jan 25 10:51:11.829 GENERAL: working_dir=/Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips/97a8365e-5abf-484b-8f24-52d07a490991
+Jan 25 10:51:11.829 HYPERVISOR: exec_cmd: vm create HeyWood 4 c7200 
+Jan 25 10:51:11.832 VM: VM HeyWood created.
+Jan 25 10:51:11.832 HYPERVISOR: exec_cmd: vm set_con_tcp_port HeyWood 5039 
+Jan 25 10:51:11.833 HYPERVISOR: exec_cmd: c7200 get_mac_addr HeyWood 
+Jan 25 10:51:11.833 HYPERVISOR: exec_cmd: vm get_status HeyWood 
+Jan 25 10:51:11.833 HYPERVISOR: exec_cmd: vm slot_add_binding HeyWood 0 0 C7200-IO-FE 
+Jan 25 10:51:11.834 HYPERVISOR: exec_cmd: vm set_disk0 HeyWood 0 
+Jan 25 10:51:11.834 HYPERVISOR: exec_cmd: vm get_status HeyWood 
+Jan 25 10:51:11.835 HYPERVISOR: exec_cmd: vm set_idle_pc HeyWood 0x60608040 
+Jan 25 10:51:11.835 HYPERVISOR: exec_cmd: vm set_ios HeyWood /Users/brunoaguiar/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 25 10:51:11.836 HYPERVISOR: exec_cmd: c7200 set_mac_addr HeyWood ca04.5cab.0000 
+Jan 25 10:51:11.836 HYPERVISOR: exec_cmd: vm set_nvram HeyWood 512 
+Jan 25 10:51:11.836 HYPERVISOR: exec_cmd: vm set_ram HeyWood 512 
+Jan 25 10:51:11.837 HYPERVISOR: exec_cmd: vm get_status HeyWood 
+Jan 25 10:51:11.837 HYPERVISOR: exec_cmd: vm slot_remove_binding HeyWood 0 0 
+Jan 25 10:51:11.837 HYPERVISOR: exec_cmd: vm get_status HeyWood 
+Jan 25 10:51:11.838 HYPERVISOR: exec_cmd: vm slot_add_binding HeyWood 0 0 C7200-IO-2FE 
+Jan 25 10:51:11.838 HYPERVISOR: exec_cmd: vm get_status HeyWood 
+Jan 25 10:51:11.838 HYPERVISOR: exec_cmd: vm slot_add_binding HeyWood 1 0 PA-2FE-TX 
+Jan 25 10:51:15.580 HYPERVISOR: exec_cmd: nio create_udp udp-1067dbcc-48a0-4d7e-81e2-72b456f9688d 10020 127.0.0.1 10021 
+Jan 25 10:51:15.798 HYPERVISOR: exec_cmd: vm slot_add_nio_binding HeyWood 0 0 udp-1067dbcc-48a0-4d7e-81e2-72b456f9688d 
+Jan 25 10:51:15.799 HYPERVISOR: exec_cmd: vm get_status HeyWood 
+Jan 25 10:51:16.699 HYPERVISOR: exec_cmd: nio create_udp udp-aa69733e-f60d-4457-8c72-1a26f495358b 10038 127.0.0.1 10039 
+Jan 25 10:51:16.701 HYPERVISOR: exec_cmd: vm slot_add_nio_binding HeyWood 1 0 udp-aa69733e-f60d-4457-8c72-1a26f495358b 
+Jan 25 10:51:16.702 HYPERVISOR: exec_cmd: vm get_status HeyWood 
+Jan 25 10:52:36.128 HYPERVISOR: exec_cmd: vm get_status HeyWood 
+Jan 25 10:52:36.128 HYPERVISOR: exec_cmd: vm extract_config HeyWood 
+Jan 25 10:52:37.120 HYPERVISOR: exec_cmd: vm get_status HeyWood 
+Jan 25 10:52:37.121 HYPERVISOR: exec_cmd: vm extract_config HeyWood 
+Jan 25 10:52:37.125 HYPERVISOR: exec_cmd: vm delete HeyWood 
+Jan 25 10:52:37.125 VM: VM HeyWood destroyed.
+Jan 25 10:52:37.126 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 25 10:52:37.247 HYPERVISOR: Stopped.
+Jan 25 10:52:37.247 GENERAL: reset done.

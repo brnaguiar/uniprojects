@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <!-- Main Content -->
+    <div id="content" style="margin-bottom: 200px">
+        <div class="row justify-content-center">
+
+            <div class="col-xl-10 col-lg-12 col-md-9">
+
+                <div class="card o-hidden border-0 shadow-lg my-5">
+                    <div class="card-body p-0">
+                        <!-- Nested Row within Card Body -->
+                        <div class="row">
+                            <div class="col-lg-6 d-none d-lg-block">
+                                {% load static %}
+                                <img src="{% static 'assets/images/artist.jpg' %}" style="height: 100%; width: 110%">
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <h2>{{info.name}}</h2>
+                                        <div class="table-responsive">
+                                            <table class="table table-borderless" id="dataTable" width="100%" cellspacing="0">
+                                                <tbody>
+                                                    <tr><td><b>Listeners:</b></td><td>{{info.listeners}}</td></tr>
+                                                    <tr><td><b>Playcount:</b></td><td>{{info.playcount}}</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <h3>About: </h3> </br> {{info.sobre | safe }}
+                </br>
+                </br>
+                <b> <a href="/semelhantes?name={{info.name}}"> See Similar Artists</a></b>
+                {{temp }}
+            </div>
+        </div>
+    <!-- End of Main Content -->
+
+{% endblock %}

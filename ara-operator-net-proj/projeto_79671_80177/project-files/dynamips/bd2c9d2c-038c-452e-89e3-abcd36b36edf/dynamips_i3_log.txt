@@ -1,0 +1,16 @@
+Jan 25 10:51:11.726 HYPERVISOR: Release 0.2.17-amd64/Darwin (tag 2017072410)
+Jan 25 10:51:11.726 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50447.
+Jan 25 10:51:11.738 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 25 10:51:11.739 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips 
+Jan 25 10:51:11.739 GENERAL: working_dir=/Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips
+Jan 25 10:51:11.739 HYPERVISOR: exec_cmd: ethsw create MilitechExternalNet 
+Jan 25 10:51:14.644 HYPERVISOR: exec_cmd: nio create_udp udp-ce9264aa-b9c0-4389-91af-d0d5c80b5697 10001 127.0.0.1 10000 
+Jan 25 10:51:14.645 HYPERVISOR: exec_cmd: ethsw add_nio MilitechExternalNet udp-ce9264aa-b9c0-4389-91af-d0d5c80b5697 
+Jan 25 10:51:14.652 HYPERVISOR: exec_cmd: ethsw set_access_port MilitechExternalNet udp-ce9264aa-b9c0-4389-91af-d0d5c80b5697 1 
+Jan 25 10:51:22.635 HYPERVISOR: exec_cmd: nio create_udp udp-497e0734-d8a3-4cf2-afa4-07c29ce7914a 10139 127.0.0.1 10138 
+Jan 25 10:51:22.635 HYPERVISOR: exec_cmd: ethsw add_nio MilitechExternalNet udp-497e0734-d8a3-4cf2-afa4-07c29ce7914a 
+Jan 25 10:51:22.648 HYPERVISOR: exec_cmd: ethsw set_access_port MilitechExternalNet udp-497e0734-d8a3-4cf2-afa4-07c29ce7914a 1 
+Jan 25 10:52:36.660 HYPERVISOR: exec_cmd: ethsw delete MilitechExternalNet 
+Jan 25 10:52:36.698 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 25 10:52:37.192 HYPERVISOR: Stopped.
+Jan 25 10:52:37.192 GENERAL: reset done.

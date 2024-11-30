@@ -1,0 +1,103 @@
+sudo ip addr add 200.100.2.2/24 dev eth0
+sudo ip route add default via 200.100.2.1
+
+
+sudo vim /etc/bind/geo.acl
+
+acl AN {
+        193.136.2.0/24;
+        193.136.0.0/24;
+};
+
+acl AS {
+        193.136.3.0/24;
+        193.136.1.0/24;
+};
+
+acl MT {
+        193.136.200.0/23;
+        193.136.202.0/23;
+};
+
+
+sudo vim /etc/bind/named.conf
+
+include "/etc/bind/geo.acl";
+
+
+sudo vim /etc/bind/named.conf.local
+
+view "arasaka_n" {
+        match-clients {AN;};
+        recursion no;
+        zone "burn-city.org" {
+                type master;
+                file "/etc/bind/burn-city.org-arasaka_n.db";
+        };
+};
+
+view "arasaka_s" {
+        match-clients {AS;};
+        recursion no;
+        zone "burn-city.org" {
+                type master;
+                file "/etc/bind/burn-city.org-arasaka_s.db";
+        };
+};
+
+view "militech" {
+        match-clients {MT;};
+        recursion no;
+        zone "burn-city.org" {
+                type master;
+                file "/etc/bind/burn-city.org-militech.db";
+        };
+};
+
+
+sudo vim /etc/bind/burn-city.org-arasaka_n.db 
+
+$TTL 604800
+$ORIGIN burn-city.org.
+@       IN      SOA     ns1.burn-city.org. adm.burn-city.org. (
+                        2
+                        604800
+                        86400
+                        2419200
+                        604800 )
+        IN      NS      ns1.burn-city.org.
+        IN      A       200.100.2.10
+ns1     IN      A       200.100.2.2
+
+
+
+sudo vim /etc/bind/burn-city.org-arasaka_s.db 
+
+$TTL 604800
+$ORIGIN burn-city.org.
+@       IN      SOA     ns1.burn-city.org. adm.burn-city.org. (
+                        2
+                        604800
+                        86400
+                        241900
+                        604800)
+        IN      NS      ns1.burn-city.org.
+        IN      A       200.100.4.10
+ns1     IN      A       200.100.2.2
+
+
+sudo vim /etc/bind/burn-city.org-militech.db
+
+$TTL 604800
+$ORIGIN burn-city.org.
+@       IN      SOA     ns1.burn-city.org. adm.burn-city.org. (
+                        2
+                        604800
+                        86400
+                        2419200
+                        604800)
+        IN      NS      ns1.burn-city.org.
+        IN      A       200.100.4.10
+ns1     IN      A       200.100.2.2
+
+                                                                         8,0-1         Top

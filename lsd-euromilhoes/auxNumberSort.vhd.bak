@@ -1,0 +1,52 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+entity auxNumberSort is
+
+	port(	novoSet       : in  std_logic;
+			antigoInput0  : in  std_logic_vector(5 downto 0);
+			antigoInput1  : in  std_logic_vector(5 downto 0);
+			antigoInput2  : in  std_logic_vector(5 downto 0);
+			antigoInput3  : in  std_logic_vector(5 downto 0);
+			antigoInput4  : in  std_logic_vector(5 downto 0);
+			novoInput0    : in  std_logic_vector(5 downto 0); 
+			novoInput1    : in  std_logic_vector(5 downto 0);
+			novoInput2    : in  std_logic_vector(5 downto 0);
+			novoInput3    : in  std_logic_vector(5 downto 0);
+			novoInput4    : in  std_logic_vector(5 downto 0);
+			muxOutput0    : out std_logic_vector(5 downto 0);
+			muxOutput1    : out std_logic_vector(5 downto 0);
+			muxOutput2    : out std_logic_vector(5 downto 0);
+			muxOutput3    : out std_logic_vector(5 downto 0);
+			muxOutput4    : out std_logic_vector(5 downto 0));
+
+end auxNumberSort;
+
+architecture Behavioral of auxNumberSort is
+
+begin
+
+	-- NOVA ORDENACAO ---------------------------
+	process(novoSet, novoInput0, novoInput1, novoInput2, novoInput3, novoInput4, antigoInput0, antigoInput1, antigoInput2, antigoInput3, antigoInput4)
+		begin
+			if (novoSet = '1') then
+				muxOutput0 <= antigoInput0;
+				muxOutput1 <= antigoInput1;
+				muxOutput2 <= antigoInput2;
+				muxOutput3 <= antigoInput3;
+				muxOutput4 <= antigoInput4;
+			else
+				muxOutput0 <= novoInput0;
+				muxOutput1 <= novoInput1;
+				muxOutput2 <= novoInput2;
+				muxOutput3 <= novoInput3;
+				muxOutput4 <= novoInput4;
+			end if;
+	end process;
+	-- ---------------------------------------------
+	
+	-- 1º FASE DA ORDENACAO ------------------------
+end Buehavioral;
+	
+	

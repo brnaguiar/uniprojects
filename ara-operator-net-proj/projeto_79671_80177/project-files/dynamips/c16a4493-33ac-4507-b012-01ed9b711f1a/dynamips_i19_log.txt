@@ -1,0 +1,19 @@
+Jan 25 10:51:12.333 HYPERVISOR: Release 0.2.17-amd64/Darwin (tag 2017072410)
+Jan 25 10:51:12.334 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50495.
+Jan 25 10:51:12.343 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 25 10:51:12.343 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips 
+Jan 25 10:51:12.343 GENERAL: working_dir=/Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips
+Jan 25 10:51:12.343 HYPERVISOR: exec_cmd: ethsw create ArasakaDataNet1 
+Jan 25 10:51:19.891 HYPERVISOR: exec_cmd: nio create_udp udp-4177e93d-827e-4e6e-a74b-81be2b188899 10105 127.0.0.1 10104 
+Jan 25 10:51:19.891 HYPERVISOR: exec_cmd: ethsw add_nio ArasakaDataNet1 udp-4177e93d-827e-4e6e-a74b-81be2b188899 
+Jan 25 10:51:19.905 HYPERVISOR: exec_cmd: ethsw set_access_port ArasakaDataNet1 udp-4177e93d-827e-4e6e-a74b-81be2b188899 1 
+Jan 25 10:51:21.339 HYPERVISOR: exec_cmd: nio create_udp udp-70b350f8-6b98-42da-96a9-2e040f7fc2fc 10126 127.0.0.1 10127 
+Jan 25 10:51:21.339 HYPERVISOR: exec_cmd: ethsw add_nio ArasakaDataNet1 udp-70b350f8-6b98-42da-96a9-2e040f7fc2fc 
+Jan 25 10:51:21.352 HYPERVISOR: exec_cmd: ethsw set_access_port ArasakaDataNet1 udp-70b350f8-6b98-42da-96a9-2e040f7fc2fc 1 
+Jan 25 10:51:23.456 HYPERVISOR: exec_cmd: nio create_udp udp-e9aa5a4e-86ea-483b-b107-d684b61c60e3 10150 127.0.0.1 10151 
+Jan 25 10:51:23.457 HYPERVISOR: exec_cmd: ethsw add_nio ArasakaDataNet1 udp-e9aa5a4e-86ea-483b-b107-d684b61c60e3 
+Jan 25 10:51:23.470 HYPERVISOR: exec_cmd: ethsw set_access_port ArasakaDataNet1 udp-e9aa5a4e-86ea-483b-b107-d684b61c60e3 1 
+Jan 25 10:52:36.657 HYPERVISOR: exec_cmd: ethsw delete ArasakaDataNet1 
+Jan 25 10:52:36.719 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 25 10:52:36.802 HYPERVISOR: Stopped.
+Jan 25 10:52:36.802 GENERAL: reset done.

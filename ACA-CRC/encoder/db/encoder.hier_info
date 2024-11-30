@@ -1,0 +1,346 @@
+|encoder
+a[0] => xor2_1:A0.in0
+a[0] => xor2_1:F1.in0
+a[0] => xor2_1:W1.in0
+a[1] => xor2_1:A0.in1
+a[1] => xor2_1:H0.in0
+a[2] => xor2_1:E0.in0
+a[2] => xor2_1:I1.in0
+a[3] => xor2_1:F0.in0
+a[3] => xor2_1:O1.in0
+a[4] => xor2_1:E0.in1
+a[4] => xor2_1:S1.in0
+a[5] => xor2_1:F0.in1
+a[5] => xor2_1:F1.in1
+a[6] => xor2_1:B0.in0
+a[6] => xor2_1:O1.in1
+a[7] => xor2_1:B0.in1
+a[7] => xor2_1:W1.in1
+a[8] => xor2_1:C0.in0
+a[9] => xor2_1:C0.in1
+a[9] => xor2_1:J0.in0
+a[10] => xor2_1:G0.in0
+a[10] => xor2_1:H0.in1
+a[11] => xor2_1:G0.in1
+a[12] => xor2_1:I0.in0
+a[12] => xor2_1:G1.in0
+a[13] => xor2_1:L0.in0
+a[13] => xor2_1:M1.in0
+a[14] => xor2_1:J0.in1
+a[14] => xor2_1:A1.in0
+a[15] => xor2_1:I0.in1
+a[15] => xor2_1:S1.in1
+x[0] << xor2_1:Z1.out0
+x[1] << xor2_1:V1.out0
+x[2] << xor2_1:R1.out0
+x[3] << xor2_1:N1.out0
+x[4] << xor2_1:L1.out0
+x[5] << xor2_1:H1.out0
+x[6] << xor2_1:E1.out0
+x[7] << xor2_1:B1.out0
+
+
+|encoder|xor2_1:A0
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:B0
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:C0
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:D0
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:E0
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:F0
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:G0
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:H0
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:I0
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:J0
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:L0
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:M0
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:N0
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:O0
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:A1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:B1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:D1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:E1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:F1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:G1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:H1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:I1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:J1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:L1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:M1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:N1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:O1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:P1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:Q1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:R1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:S1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:T1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:U1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:V1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:W1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:X1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:Y1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|encoder|xor2_1:Z1
+in0 => out0.IN0
+in0 => out0.IN0
+in1 => out0.IN1
+in1 => out0.IN1
+out0 <= out0.DB_MAX_OUTPUT_PORT_TYPE
+
+

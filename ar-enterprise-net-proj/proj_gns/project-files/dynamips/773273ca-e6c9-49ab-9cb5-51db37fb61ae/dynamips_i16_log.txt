@@ -1,0 +1,66 @@
+Jun 16 17:38:35.778 HYPERVISOR: Release 0.2.17-amd64/Darwin (tag 2017072410)
+Jun 16 17:38:35.779 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51611.
+Jun 16 17:38:35.788 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 16 17:38:35.788 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips 
+Jun 16 17:38:35.788 GENERAL: working_dir=/Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips
+Jun 16 17:38:35.788 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips/26eb9767-db9b-4d9e-ae3c-cc21402a11d4 
+Jun 16 17:38:35.788 GENERAL: working_dir=/Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips/26eb9767-db9b-4d9e-ae3c-cc21402a11d4
+Jun 16 17:38:35.788 HYPERVISOR: exec_cmd: vm create LISBOA_ISP_PT1 12 c7200 
+Jun 16 17:38:35.789 VM: VM LISBOA_ISP_PT1 created.
+Jun 16 17:38:35.789 HYPERVISOR: exec_cmd: vm set_con_tcp_port LISBOA_ISP_PT1 5021 
+Jun 16 17:38:35.789 HYPERVISOR: exec_cmd: c7200 get_mac_addr LISBOA_ISP_PT1 
+Jun 16 17:38:35.790 HYPERVISOR: exec_cmd: vm get_status LISBOA_ISP_PT1 
+Jun 16 17:38:35.790 HYPERVISOR: exec_cmd: vm slot_add_binding LISBOA_ISP_PT1 0 0 C7200-IO-FE 
+Jun 16 17:38:35.790 HYPERVISOR: exec_cmd: vm set_disk0 LISBOA_ISP_PT1 0 
+Jun 16 17:38:35.791 HYPERVISOR: exec_cmd: vm get_status LISBOA_ISP_PT1 
+Jun 16 17:38:35.791 HYPERVISOR: exec_cmd: vm set_idle_pc LISBOA_ISP_PT1 0x60608040 
+Jun 16 17:38:35.792 HYPERVISOR: exec_cmd: vm set_ios LISBOA_ISP_PT1 /Users/brunoaguiar/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 16 17:38:35.792 HYPERVISOR: exec_cmd: vm set_nvram LISBOA_ISP_PT1 512 
+Jun 16 17:38:35.792 HYPERVISOR: exec_cmd: vm set_ram LISBOA_ISP_PT1 512 
+Jun 16 17:38:35.793 HYPERVISOR: exec_cmd: vm get_status LISBOA_ISP_PT1 
+Jun 16 17:38:35.793 HYPERVISOR: exec_cmd: vm slot_remove_binding LISBOA_ISP_PT1 0 0 
+Jun 16 17:38:35.793 HYPERVISOR: exec_cmd: vm get_status LISBOA_ISP_PT1 
+Jun 16 17:38:35.793 HYPERVISOR: exec_cmd: vm slot_add_binding LISBOA_ISP_PT1 0 0 C7200-IO-2FE 
+Jun 16 17:38:35.794 HYPERVISOR: exec_cmd: vm get_status LISBOA_ISP_PT1 
+Jun 16 17:38:35.794 HYPERVISOR: exec_cmd: vm slot_add_binding LISBOA_ISP_PT1 1 0 PA-2FE-TX 
+Jun 16 17:38:42.121 HYPERVISOR: exec_cmd: nio create_udp udp-b874b971-ff3b-4c69-9a90-1b28e4f2d824 10148 127.0.0.1 10149 
+Jun 16 17:38:42.337 HYPERVISOR: exec_cmd: vm slot_add_nio_binding LISBOA_ISP_PT1 0 0 udp-b874b971-ff3b-4c69-9a90-1b28e4f2d824 
+Jun 16 17:38:42.337 HYPERVISOR: exec_cmd: vm get_status LISBOA_ISP_PT1 
+Jun 16 17:38:42.800 HYPERVISOR: exec_cmd: nio create_udp udp-f5575ff8-cb46-4852-b9f9-0a09ba01fe6b 10164 127.0.0.1 10165 
+Jun 16 17:38:42.801 HYPERVISOR: exec_cmd: vm slot_add_nio_binding LISBOA_ISP_PT1 1 0 udp-f5575ff8-cb46-4852-b9f9-0a09ba01fe6b 
+Jun 16 17:38:42.802 HYPERVISOR: exec_cmd: vm get_status LISBOA_ISP_PT1 
+Jun 16 17:41:45.246 HYPERVISOR: exec_cmd: vm set_ghost_status LISBOA_ISP_PT1 2 
+Jun 16 17:41:45.248 HYPERVISOR: exec_cmd: vm set_ghost_file LISBOA_ISP_PT1 /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips/c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 16 17:41:45.248 HYPERVISOR: exec_cmd: vm get_status LISBOA_ISP_PT1 
+Jun 16 17:41:45.252 HYPERVISOR: exec_cmd: vm set_config LISBOA_ISP_PT1 configs/i12_startup-config.cfg 
+Jun 16 17:41:45.255 HYPERVISOR: exec_cmd: vm start LISBOA_ISP_PT1 
+Jun 16 17:41:48.251 HYPERVISOR: exec_cmd: vm get_status LISBOA_ISP_PT1 
+Jun 16 17:41:48.251 HYPERVISOR: exec_cmd: vm stop LISBOA_ISP_PT1 
+Jun 16 17:41:48.352 VM: VM LISBOA_ISP_PT1 shutdown.
+Jun 16 17:41:48.353 HYPERVISOR: exec_cmd: vm extract_config LISBOA_ISP_PT1 
+Jun 16 17:43:35.874 HYPERVISOR: exec_cmd: vm set_ghost_status LISBOA_ISP_PT1 2 
+Jun 16 17:43:35.874 HYPERVISOR: exec_cmd: vm set_ghost_file LISBOA_ISP_PT1 /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips/c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 16 17:43:35.875 HYPERVISOR: exec_cmd: vm get_status LISBOA_ISP_PT1 
+Jun 16 17:43:35.875 HYPERVISOR: exec_cmd: vm set_config LISBOA_ISP_PT1 configs/i12_startup-config.cfg 
+Jun 16 17:43:35.876 HYPERVISOR: exec_cmd: vm start LISBOA_ISP_PT1 
+Jun 16 17:44:36.142 HYPERVISOR: exec_cmd: vm extract_config LISBOA_ISP_PT1 
+Jun 16 17:44:51.098 HYPERVISOR: exec_cmd: vm get_status LISBOA_ISP_PT1 
+Jun 16 17:44:51.098 HYPERVISOR: exec_cmd: vm stop LISBOA_ISP_PT1 
+Jun 16 17:44:51.193 VM: VM LISBOA_ISP_PT1 shutdown.
+Jun 16 17:44:51.193 HYPERVISOR: exec_cmd: vm extract_config LISBOA_ISP_PT1 
+Jun 16 19:04:42.956 HYPERVISOR: exec_cmd: vm set_ghost_status LISBOA_ISP_PT1 2 
+Jun 16 19:04:42.957 HYPERVISOR: exec_cmd: vm set_ghost_file LISBOA_ISP_PT1 /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips/c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 16 19:04:42.958 HYPERVISOR: exec_cmd: vm get_status LISBOA_ISP_PT1 
+Jun 16 19:04:42.958 HYPERVISOR: exec_cmd: vm set_config LISBOA_ISP_PT1 configs/i12_startup-config.cfg 
+Jun 16 19:04:42.958 HYPERVISOR: exec_cmd: vm start LISBOA_ISP_PT1 
+Jun 16 23:57:16.449 HYPERVISOR: exec_cmd: vm get_status LISBOA_ISP_PT1 
+Jun 16 23:57:16.450 HYPERVISOR: exec_cmd: vm stop LISBOA_ISP_PT1 
+Jun 16 23:57:16.564 VM: VM LISBOA_ISP_PT1 shutdown.
+Jun 16 23:57:16.565 HYPERVISOR: exec_cmd: vm extract_config LISBOA_ISP_PT1 
+Jun 16 23:57:17.763 HYPERVISOR: exec_cmd: vm get_status LISBOA_ISP_PT1 
+Jun 16 23:57:17.766 HYPERVISOR: exec_cmd: vm extract_config LISBOA_ISP_PT1 
+Jun 16 23:57:17.774 HYPERVISOR: exec_cmd: vm delete LISBOA_ISP_PT1 
+Jun 16 23:57:17.774 VM: VM LISBOA_ISP_PT1 destroyed.
+Jun 16 23:57:17.778 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 16 23:57:18.256 HYPERVISOR: Stopped.
+Jun 16 23:57:18.256 GENERAL: reset done.

@@ -1,0 +1,49 @@
+Jun 16 17:38:35.669 HYPERVISOR: Release 0.2.17-amd64/Darwin (tag 2017072410)
+Jun 16 17:38:35.669 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51601.
+Jun 16 17:38:35.679 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 16 17:38:35.679 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips 
+Jun 16 17:38:35.679 GENERAL: working_dir=/Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips
+Jun 16 17:38:35.680 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips/4475e80d-1b4c-4e75-a7fd-cb51d9c77a95 
+Jun 16 17:38:35.680 GENERAL: working_dir=/Users/brunoaguiar/Desktop/AR/projecto_backup/proj_backup/project-files/dynamips/4475e80d-1b4c-4e75-a7fd-cb51d9c77a95
+Jun 16 17:38:35.680 HYPERVISOR: exec_cmd: vm create Aveiro_L3_DMZ_2 10 c3725 
+Jun 16 17:38:35.680 VM: VM Aveiro_L3_DMZ_2 created.
+Jun 16 17:38:35.681 HYPERVISOR: exec_cmd: vm set_con_tcp_port Aveiro_L3_DMZ_2 5016 
+Jun 16 17:38:35.681 HYPERVISOR: exec_cmd: c3725 get_mac_addr Aveiro_L3_DMZ_2 
+Jun 16 17:38:35.682 HYPERVISOR: exec_cmd: vm set_disk0 Aveiro_L3_DMZ_2 1 
+Jun 16 17:38:35.682 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_DMZ_2 
+Jun 16 17:38:35.682 HYPERVISOR: exec_cmd: vm set_idle_pc Aveiro_L3_DMZ_2 0x60a68e70 
+Jun 16 17:38:35.684 HYPERVISOR: exec_cmd: vm set_ios Aveiro_L3_DMZ_2 /Users/brunoaguiar/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 16 17:38:35.684 HYPERVISOR: exec_cmd: vm set_nvram Aveiro_L3_DMZ_2 256 
+Jun 16 17:38:35.685 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_DMZ_2 
+Jun 16 17:38:35.685 HYPERVISOR: exec_cmd: vm slot_add_binding Aveiro_L3_DMZ_2 1 0 NM-16ESW 
+Jun 16 17:38:40.450 HYPERVISOR: exec_cmd: nio create_udp udp-f4a6a723-29c2-460b-a184-cb9b6152279c 10116 127.0.0.1 10117 
+Jun 16 17:38:40.663 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_L3_DMZ_2 1 0 udp-f4a6a723-29c2-460b-a184-cb9b6152279c 
+Jun 16 17:38:40.663 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_DMZ_2 
+Jun 16 17:38:40.774 HYPERVISOR: exec_cmd: nio create_udp udp-93c085b2-12cd-4163-86d6-aa1f696a3495 10122 127.0.0.1 10123 
+Jun 16 17:38:40.776 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_L3_DMZ_2 1 1 udp-93c085b2-12cd-4163-86d6-aa1f696a3495 
+Jun 16 17:38:40.776 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_DMZ_2 
+Jun 16 17:38:41.013 HYPERVISOR: exec_cmd: nio create_udp udp-dca5b0cc-06d6-4dd6-93d7-f2f88be36457 10132 127.0.0.1 10133 
+Jun 16 17:38:41.014 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_L3_DMZ_2 1 15 udp-dca5b0cc-06d6-4dd6-93d7-f2f88be36457 
+Jun 16 17:38:41.014 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_DMZ_2 
+Jun 16 17:38:44.908 HYPERVISOR: exec_cmd: nio create_udp udp-03c2b734-d38e-4a7b-ab8b-0db596a19940 10204 127.0.0.1 10205 
+Jun 16 17:38:44.909 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_L3_DMZ_2 1 2 udp-03c2b734-d38e-4a7b-ab8b-0db596a19940 
+Jun 16 17:38:44.910 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_DMZ_2 
+Jun 16 17:39:25.160 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_DMZ_2 
+Jun 16 17:39:25.160 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Aveiro_L3_DMZ_2 1 15 
+Jun 16 17:39:25.161 HYPERVISOR: exec_cmd: nio delete udp-dca5b0cc-06d6-4dd6-93d7-f2f88be36457 
+Jun 16 17:39:25.340 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_DMZ_2 
+Jun 16 17:39:25.340 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Aveiro_L3_DMZ_2 1 0 
+Jun 16 17:39:25.341 HYPERVISOR: exec_cmd: nio delete udp-f4a6a723-29c2-460b-a184-cb9b6152279c 
+Jun 16 17:39:25.418 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_DMZ_2 
+Jun 16 17:39:25.418 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Aveiro_L3_DMZ_2 1 1 
+Jun 16 17:39:25.419 HYPERVISOR: exec_cmd: nio delete udp-93c085b2-12cd-4163-86d6-aa1f696a3495 
+Jun 16 17:39:25.575 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_DMZ_2 
+Jun 16 17:39:25.575 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Aveiro_L3_DMZ_2 1 2 
+Jun 16 17:39:25.576 HYPERVISOR: exec_cmd: nio delete udp-03c2b734-d38e-4a7b-ab8b-0db596a19940 
+Jun 16 17:39:25.809 HYPERVISOR: exec_cmd: vm get_status Aveiro_L3_DMZ_2 
+Jun 16 17:39:25.809 HYPERVISOR: exec_cmd: vm extract_config Aveiro_L3_DMZ_2 
+Jun 16 17:39:25.810 HYPERVISOR: exec_cmd: vm delete Aveiro_L3_DMZ_2 
+Jun 16 17:39:25.811 VM: VM Aveiro_L3_DMZ_2 destroyed.
+Jun 16 17:39:25.812 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 16 17:39:25.927 HYPERVISOR: Stopped.
+Jun 16 17:39:25.927 GENERAL: reset done.

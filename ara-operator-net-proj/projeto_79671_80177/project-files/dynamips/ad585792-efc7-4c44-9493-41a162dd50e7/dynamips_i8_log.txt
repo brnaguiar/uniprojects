@@ -1,0 +1,16 @@
+Jan 25 10:51:11.894 HYPERVISOR: Release 0.2.17-amd64/Darwin (tag 2017072410)
+Jan 25 10:51:11.894 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50462.
+Jan 25 10:51:11.904 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 25 10:51:11.905 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips 
+Jan 25 10:51:11.905 GENERAL: working_dir=/Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips
+Jan 25 10:51:11.905 HYPERVISOR: exec_cmd: ethsw create OperatorA'sMediaNetwork 
+Jan 25 10:51:16.261 HYPERVISOR: exec_cmd: nio create_udp udp-06b3352f-4db1-4a78-8401-3a7e1b71312f 10027 127.0.0.1 10026 
+Jan 25 10:51:16.261 HYPERVISOR: exec_cmd: ethsw add_nio OperatorA'sMediaNetwork udp-06b3352f-4db1-4a78-8401-3a7e1b71312f 
+Jan 25 10:51:16.269 HYPERVISOR: exec_cmd: ethsw set_access_port OperatorA'sMediaNetwork udp-06b3352f-4db1-4a78-8401-3a7e1b71312f 1 
+Jan 25 10:51:23.349 HYPERVISOR: exec_cmd: nio create_udp udp-ac947d53-2e5f-4422-a104-97a5939560fe 10149 127.0.0.1 10148 
+Jan 25 10:51:23.349 HYPERVISOR: exec_cmd: ethsw add_nio OperatorA'sMediaNetwork udp-ac947d53-2e5f-4422-a104-97a5939560fe 
+Jan 25 10:51:23.355 HYPERVISOR: exec_cmd: ethsw set_access_port OperatorA'sMediaNetwork udp-ac947d53-2e5f-4422-a104-97a5939560fe 1 
+Jan 25 10:52:36.656 HYPERVISOR: exec_cmd: ethsw delete OperatorA'sMediaNetwork 
+Jan 25 10:52:36.678 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 25 10:52:36.839 HYPERVISOR: Stopped.
+Jan 25 10:52:36.839 GENERAL: reset done.

@@ -1,0 +1,44 @@
+Dec 30 15:45:59.107 HYPERVISOR: Release 0.2.17-amd64/Darwin (tag 2017072410)
+Dec 30 15:45:59.107 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55398.
+Dec 30 15:45:59.116 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 30 15:45:59.116 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/universidade/AR/trabalho/proj/project-files/dynamips 
+Dec 30 15:45:59.116 GENERAL: working_dir=/Users/brunoaguiar/Desktop/universidade/AR/trabalho/proj/project-files/dynamips
+Dec 30 15:45:59.117 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/universidade/AR/trabalho/proj/project-files/dynamips/a4fdbac4-3ce3-48f4-8091-f8a0bc3698d1 
+Dec 30 15:45:59.117 GENERAL: working_dir=/Users/brunoaguiar/Desktop/universidade/AR/trabalho/proj/project-files/dynamips/a4fdbac4-3ce3-48f4-8091-f8a0bc3698d1
+Dec 30 15:45:59.117 HYPERVISOR: exec_cmd: vm create SW3C2 3 c3725 
+Dec 30 15:45:59.117 VM: VM SW3C2 created.
+Dec 30 15:45:59.117 HYPERVISOR: exec_cmd: vm set_con_tcp_port SW3C2 5006 
+Dec 30 15:45:59.117 HYPERVISOR: exec_cmd: c3725 get_mac_addr SW3C2 
+Dec 30 15:45:59.118 HYPERVISOR: exec_cmd: vm set_disk0 SW3C2 1 
+Dec 30 15:45:59.118 HYPERVISOR: exec_cmd: vm get_status SW3C2 
+Dec 30 15:45:59.118 HYPERVISOR: exec_cmd: vm set_idle_pc SW3C2 0x60a68e70 
+Dec 30 15:45:59.119 HYPERVISOR: exec_cmd: vm set_ios SW3C2 /Users/brunoaguiar/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 30 15:45:59.119 HYPERVISOR: exec_cmd: c3725 set_mac_addr SW3C2 c203.077b.0000 
+Dec 30 15:45:59.119 HYPERVISOR: exec_cmd: vm set_nvram SW3C2 256 
+Dec 30 15:45:59.120 HYPERVISOR: exec_cmd: vm get_status SW3C2 
+Dec 30 15:45:59.120 HYPERVISOR: exec_cmd: vm slot_add_binding SW3C2 1 0 NM-16ESW 
+Dec 30 15:46:00.083 HYPERVISOR: exec_cmd: nio create_udp udp-ec2c8803-6dce-43c1-b06e-8c745d13a008 10020 127.0.0.1 10021 
+Dec 30 15:46:00.301 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW3C2 0 0 udp-ec2c8803-6dce-43c1-b06e-8c745d13a008 
+Dec 30 15:46:00.301 HYPERVISOR: exec_cmd: vm get_status SW3C2 
+Dec 30 15:46:00.648 HYPERVISOR: exec_cmd: nio create_udp udp-602cffed-b512-483b-a2f3-792a906e672e 10032 127.0.0.1 10033 
+Dec 30 15:46:00.649 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW3C2 0 1 udp-602cffed-b512-483b-a2f3-792a906e672e 
+Dec 30 15:46:00.650 HYPERVISOR: exec_cmd: vm get_status SW3C2 
+Dec 30 15:46:00.757 HYPERVISOR: exec_cmd: nio create_udp udp-ff342ab6-1db0-4eb9-9fcd-a09c5f9b11e8 10042 127.0.0.1 10043 
+Dec 30 15:46:00.759 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW3C2 1 0 udp-ff342ab6-1db0-4eb9-9fcd-a09c5f9b11e8 
+Dec 30 15:46:00.759 HYPERVISOR: exec_cmd: vm get_status SW3C2 
+Dec 30 15:46:00.817 HYPERVISOR: exec_cmd: nio create_udp udp-c2871404-fa6f-4127-a242-1837ec70dbe5 10048 127.0.0.1 10049 
+Dec 30 15:46:00.818 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW3C2 1 1 udp-c2871404-fa6f-4127-a242-1837ec70dbe5 
+Dec 30 15:46:00.818 HYPERVISOR: exec_cmd: vm get_status SW3C2 
+Dec 30 15:46:01.449 HYPERVISOR: exec_cmd: nio create_udp udp-a8ff635e-c3f7-415e-89c8-687bd5acb7cd 10066 127.0.0.1 10067 
+Dec 30 15:46:01.450 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW3C2 1 2 udp-a8ff635e-c3f7-415e-89c8-687bd5acb7cd 
+Dec 30 15:46:01.450 HYPERVISOR: exec_cmd: vm get_status SW3C2 
+Dec 30 15:56:54.593 HYPERVISOR: exec_cmd: vm set_ios SW3C2 /Users/brunoaguiar/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 30 16:31:30.035 HYPERVISOR: exec_cmd: vm get_status SW3C2 
+Dec 30 16:31:30.037 HYPERVISOR: exec_cmd: vm extract_config SW3C2 
+Dec 30 16:31:30.198 HYPERVISOR: exec_cmd: vm get_status SW3C2 
+Dec 30 16:31:30.199 HYPERVISOR: exec_cmd: vm extract_config SW3C2 
+Dec 30 16:31:30.200 HYPERVISOR: exec_cmd: vm delete SW3C2 
+Dec 30 16:31:30.201 VM: VM SW3C2 destroyed.
+Dec 30 16:31:30.202 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 30 16:31:30.327 HYPERVISOR: Stopped.
+Dec 30 16:31:30.327 GENERAL: reset done.

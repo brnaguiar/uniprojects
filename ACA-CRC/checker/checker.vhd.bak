@@ -1,0 +1,56 @@
+library ieee;
+use ieee.Std_logic_1164.all;
+
+entity checker is
+
+	port(	datain  : in std_logic;
+		   clk     : in std_logic;
+			dataout : out std_logic_vector(23 downto 0);
+			flag : out std_logic);
+
+end checker;
+
+architecture structure of checker is
+
+	signal reminder   : std_logic_vector(7  downto 0) := (others => '0')
+	signal xor_output : std_logic_vector(4 downto 0) := (others => '0')
+	
+	component DFlipFlop is 
+			port(clk, d : in std_logic;
+			     nSet, nRst: in std_logic;
+              q, nq : out std_logic); 
+	end component;
+	
+	component xor2_1 is
+		port (in0, in1 : in std_logic;
+			   out0	   : out std_logic);
+	end component;
+	
+	begin
+		
+		xor1 : xor2_1 port map(datain, reminder(7), xor_output(0));
+		FlipFlop1 : DFlipFlop port map(clk, xor_output(0), '1', '0', reminder(0));
+		
+		xor2 : xor2_1 port map(reminder(0), reminder(7), xor_output(1));
+		FlipFlop2 : DFlipFlop port map(clk, xor_output(1), '1', '0', reminder(1));
+		
+		xor3 : xor2_1 port map(reminder(1), reminder(7), xor_output(2));
+		FlipFlop3 : DFlipFlop port map(clk, xor_output(2), '1', '0', reminder(2));
+		
+		xor4 : xor2_1 port map(reminder(2), reminder(7), xor_output(3));
+		FlipFlop4 : DFlipFlop port map(clk, xor_output(3), '1', '0', reminder(3));
+		
+		FlipFlop5 : DFlipFlop port map(clk, reminder(3), '1', '0', reminder(4));
+		
+		xor5 : xor2_1 port map(reminder(4), reminder(7), xor_output(4));
+		FlipFlop6 : DFlipFlop port map(clk, xor_output(4), '1', '0', reminder(5));
+		
+		FlipFlop7 : DFlipFlop port map(clk, reminder(5), '1', '0', reminder(6));
+		
+		FlipFlop8 : DFlipFlop port map(clk, reminder(6), '1', '0', reminder(7));
+		
+		
+		
+		
+		
+		

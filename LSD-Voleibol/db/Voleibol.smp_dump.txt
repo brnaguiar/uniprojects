@@ -1,0 +1,18 @@
+
+State Machine - |Voleibol|StateMachine:inst|s_currentState
+Name s_currentState.finalState s_currentState.JogarSet s_currentState.Inicio 
+s_currentState.Inicio 0 0 0 
+s_currentState.JogarSet 0 1 1 
+s_currentState.finalState 1 0 1 
+
+State Machine - |Voleibol|lcd_tl:inst2|lcd_controller:ca|state
+Name state.process_txd_requests state.power_on_phase8 state.power_on_phase7 state.power_on_phase6 state.power_on_phase5 state.power_on_phase4 state.power_on_phase3 state.power_on_phase2 state.power_on_phase1 
+state.power_on_phase1 0 0 0 0 0 0 0 0 0 
+state.power_on_phase2 0 0 0 0 0 0 0 1 1 
+state.power_on_phase3 0 0 0 0 0 0 1 0 1 
+state.power_on_phase4 0 0 0 0 0 1 0 0 1 
+state.power_on_phase5 0 0 0 0 1 0 0 0 1 
+state.power_on_phase6 0 0 0 1 0 0 0 0 1 
+state.power_on_phase7 0 0 1 0 0 0 0 0 1 
+state.power_on_phase8 0 1 0 0 0 0 0 0 1 
+state.process_txd_requests 1 0 0 0 0 0 0 0 1 

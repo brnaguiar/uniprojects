@@ -1,0 +1,296 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ConnectDB
+</name>
+</assembly>
+<members>
+<member name="T:ConnectDB.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:ConnectDB.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:ConnectDB.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.Club_MemberDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.Club_SupporterDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.InfrastructureDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.MatchdayDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.OponentsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.PersonDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.Played_ByDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.PlayerDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.Sport_FacilityDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.StaffDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.Team_SeasonDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.Club_MemberRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.Club_SupporterRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.InfrastructureRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.MatchdayRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.OponentsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.PersonRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.Played_ByRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.PlayerRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.Sport_FacilityRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.StaffRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.Team_SeasonRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.Club_MemberRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.Club_SupporterRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.InfrastructureRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.MatchdayRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.OponentsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.PersonRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.Played_ByRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.PlayerRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.Sport_FacilityRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.StaffRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSet.Team_SeasonRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSetTableAdapters.Club_MemberTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSetTableAdapters.Club_SupporterTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSetTableAdapters.InfrastructureTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSetTableAdapters.MatchdayTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSetTableAdapters.OponentsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSetTableAdapters.PersonTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSetTableAdapters.Played_ByTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSetTableAdapters.PlayerTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSetTableAdapters.Sport_FacilityTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSetTableAdapters.StaffTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSetTableAdapters.Team_SeasonTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSetTableAdapters.QueriesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:ConnectDB.GESTAO_DESPORTIVADataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(ConnectDB.GESTAO_DESPORTIVADataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:ConnectDB.GESTAO_DESPORTIVADataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(ConnectDB.GESTAO_DESPORTIVADataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:ConnectDB.GESTAO_DESPORTIVADataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(ConnectDB.GESTAO_DESPORTIVADataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:ConnectDB.GESTAO_DESPORTIVADataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:ConnectDB.GESTAO_DESPORTIVADataSetTableAdapters.TableAdapterManager.UpdateAll(ConnectDB.GESTAO_DESPORTIVADataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:ConnectDB.GESTAO_DESPORTIVADataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

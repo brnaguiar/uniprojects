@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Sun Dec 06 17:37:06 2020
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : encoder
+Top-level Entity Name : encoder
+Family : Cyclone IV GX
+Total logic elements : 18
+    Total combinational functions : 18
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 24
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

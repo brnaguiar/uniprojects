@@ -1,0 +1,9 @@
+
+State Machine - |StateMachine|s_pState
+Name s_pState.S5 s_pState.S4 s_pState.S3 s_pState.S2 s_pState.S1 s_pState.S0 
+s_pState.S0 0 0 0 0 0 0 
+s_pState.S1 0 0 0 0 1 1 
+s_pState.S2 0 0 0 1 0 1 
+s_pState.S3 0 0 1 0 0 1 
+s_pState.S4 0 1 0 0 0 1 
+s_pState.S5 1 0 0 0 0 1 

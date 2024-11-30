@@ -1,0 +1,6 @@
+/*lfsr_mb*/
+the_ROM_image:
+{
+   <bitstream> 
+   <elf> 
+}

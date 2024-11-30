@@ -1,0 +1,13 @@
+Jan 25 10:51:12.304 HYPERVISOR: Release 0.2.17-amd64/Darwin (tag 2017072410)
+Jan 25 10:51:12.305 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50492.
+Jan 25 10:51:12.314 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 25 10:51:12.315 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips 
+Jan 25 10:51:12.315 GENERAL: working_dir=/Users/brunoaguiar/Desktop/ARA/project/proj_backup/project-files/dynamips
+Jan 25 10:51:12.315 HYPERVISOR: exec_cmd: ethsw create ArasakaVoIPNet1 
+Jan 25 10:51:19.766 HYPERVISOR: exec_cmd: nio create_udp udp-47c7544d-9dc2-4820-a96d-08b89f94a74a 10100 127.0.0.1 10101 
+Jan 25 10:51:19.767 HYPERVISOR: exec_cmd: ethsw add_nio ArasakaVoIPNet1 udp-47c7544d-9dc2-4820-a96d-08b89f94a74a 
+Jan 25 10:51:19.773 HYPERVISOR: exec_cmd: ethsw set_access_port ArasakaVoIPNet1 udp-47c7544d-9dc2-4820-a96d-08b89f94a74a 1 
+Jan 25 10:52:36.657 HYPERVISOR: exec_cmd: ethsw delete ArasakaVoIPNet1 
+Jan 25 10:52:36.668 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 25 10:52:36.746 HYPERVISOR: Stopped.
+Jan 25 10:52:36.746 GENERAL: reset done.
